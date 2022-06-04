@@ -7,12 +7,7 @@
 
 world::world()  
 {
-    for (size_t i = 0; i < world_size; i++)
-    {
-        collisions[i] = false;
-    }
-    // Creating 100 bots.
-    for (int i = 0; i < 100; i++)
+    for (world_size_type i = 0; i < 100; i++)
     {
         primitive_bot* object = new primitive_bot(*this);
 
@@ -34,6 +29,7 @@ void world::update()
 {
     clear_collision();
 
+    // current_size not changing when program run. It changing only if object was deleted, but no created.
     static world_size_type current_size = gameObjects.size();
     
     for (register world_size_type i = 0; i < current_size; ++i)
