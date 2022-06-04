@@ -1,6 +1,6 @@
 # Bot-Evolition
 
-This is small project for Orange PI. I want to run it on a few days, or weeks. Maybe in future i add neural networks.
+This is small project for Orange PI, and this not mistake in name. I want to run it on a few days, or weeks. Maybe in future i add neural networks.
 
 My code bad? I don't know. If yes, i will happy is you try to help me.
 
