@@ -11,6 +11,7 @@ world::world()
     {
         collisions[i] = false;
     }
+    // Creating 100 bots.
     for (int i = 0; i < 100; i++)
     {
         primitive_bot* object = new primitive_bot(*this);
@@ -48,6 +49,8 @@ void world::update()
         }
     }
 
+
+    // For debug:
     //std::string cmd = "title " + std::to_string(gameObjects.size());
     //system(cmd.c_str());
 }
