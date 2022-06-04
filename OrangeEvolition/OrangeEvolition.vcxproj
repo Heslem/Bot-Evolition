@@ -109,17 +109,21 @@
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="gameObject.cpp" />
+    <ClCompile Include="game_list.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="primitive_bot.cpp" />
-    <ClCompile Include="wall.cpp" />
+    <ClCompile Include="save.cpp" />
     <ClCompile Include="world.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="buffer_config.h" />
     <ClInclude Include="gameObject.h" />
+    <ClInclude Include="game_list.h" />
+    <ClInclude Include="graphics_mode.h" />
     <ClInclude Include="graphics_worker.h" />
     <ClInclude Include="primitive_bot.h" />
+    <ClInclude Include="save.h" />
     <ClInclude Include="vector2.h" />
-    <ClInclude Include="wall.h" />
     <ClInclude Include="world.h" />
     <ClInclude Include="world_config.h" />
   </ItemGroup>

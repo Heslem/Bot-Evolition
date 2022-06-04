@@ -1,19 +1,19 @@
 #include "game_list.h"
 #include <iostream>
-game_list::game_list() : pointer(0)
+game_object_list::game_object_list() : pointer(0)
 {
 	register world_size_type i = 0;
 	for (; i < world_size; ++i)
 		this->data[i] = nullptr;
 }
 
-game_list::~game_list()
+game_object_list::~game_object_list()
 {
 	for (world_size_type i = 0; i < pointer; ++i)
 		delete this->data[i];
 }
 
-void game_list::push_back(gameObject* gameObject)
+void game_object_list::push_back(gameObject* gameObject)
 {
 	if (is_full()) return;
 
@@ -21,7 +21,7 @@ void game_list::push_back(gameObject* gameObject)
 	this->pointer++;
 }
 
-void game_list::erase(const world_size_type& i)
+void game_object_list::erase(const world_size_type& i)
 {
 	if (i < this->pointer) {
 
@@ -37,7 +37,7 @@ void game_list::erase(const world_size_type& i)
 	}
 }
 
-void game_list::move_left(const world_size_type& offset)
+void game_object_list::move_left(const world_size_type& offset)
 {
 	register world_size_type j = offset;
 	for (; j < pointer; ++j)

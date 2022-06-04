@@ -34,10 +34,10 @@ void world::update()
     
     for (register world_size_type i = 0; i < current_size; ++i)
     {
-        collisions[get_index(gameObjects[i].position.x, gameObjects[i].position.y)] = false;
+        collisions[get_index(gameObjects[i].position.get_x(), gameObjects[i].position.get_y())] = false;
 
         if (this->gameObjects[i].update(collisions)) {
-            collisions[get_index(gameObjects[i].position.x, gameObjects[i].position.y)] = true;
+            collisions[get_index(gameObjects[i].position.get_x(), gameObjects[i].position.get_y())] = true;
         }
         else {
             this->gameObjects.erase(i);
@@ -47,13 +47,13 @@ void world::update()
 
 
     // For debug:
-    //std::string cmd = "title " + std::to_string(gameObjects.size());
-    //system(cmd.c_str());
+    /*std::string cmd = "title " + std::to_string(gameObjects.size());
+    system(cmd.c_str());*/
 }
 
 void world::create(gameObject* object)
 {
-    collisions[get_index(object->position.x, object->position.y)] = true;
+    collisions[get_index(object->position.get_x(), object->position.get_y())] = true;
     this->gameObjects.push_back(object);
 }
 
@@ -81,12 +81,12 @@ bool world::is_free_cell(const world_size_type& x, const world_size_type& y) con
 
 bool world::is_busy_cell(const vector2<world_size_type>& position) const
 {
-    return is_busy_cell(position.x, position.y);
+    return is_busy_cell(position.get_x(), position.get_y());
 }
 
 bool world::is_free_cell(const vector2<world_size_type>& position) const
 {
-    return !is_busy_cell(position.x, position.y);
+    return !is_busy_cell(position.get_x(), position.get_y());
 }
 
 world_size_type world::get_index(const world_size_type& x, const world_size_type& y) const
@@ -99,7 +99,7 @@ void world::clear_collision()
     for (register world_size_type i = 0; i < world_size; ++i)
     {
         if (i < gameObjects.size()) {
-            collisions[get_index(gameObjects[i].position.x, gameObjects[i].position.y)] = true;
+            collisions[get_index(gameObjects[i].position.get_x(), gameObjects[i].position.get_y())] = true;
         }
         else {
             collisions[i] = false;

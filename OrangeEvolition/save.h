@@ -1,5 +1,5 @@
 #pragma once
-#include "game_object_list.h"
+#include "game_list.h"
 
 struct save
 {

@@ -3,12 +3,12 @@
 #include "gameObject.h"
 
 
-struct game_list final
+struct game_object_list final
 {
 public:
-	game_list();
-	~game_list();
-	game_list(const game_list&) = delete;
+	game_object_list();
+	~game_object_list();
+	game_object_list(const game_object_list&) = delete;
 
 	void push_back(gameObject* gameObject);
 	void erase(const world_size_type& i);

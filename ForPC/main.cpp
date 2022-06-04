@@ -7,7 +7,7 @@
 #endif
 #include "world.h"
 
-int main(int argc, char* argv[])
+int main()
 {
     const std::chrono::milliseconds timescale(1);
 
@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
 #endif
 
         mainWorld->update();
-        //std::this_thread::sleep_for(timescale);
+        std::this_thread::sleep_for(timescale);
     }
     delete mainWorld;
 

@@ -39,7 +39,7 @@
     <ClInclude Include="graphics_mode.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="game_list.h">
+    <ClInclude Include="game_object_list.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="buffer_config.h">
@@ -62,7 +62,7 @@
     <ClCompile Include="save.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="game_list.cpp">
+    <ClCompile Include="game_object_list.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

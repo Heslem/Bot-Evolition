@@ -1,29 +1,27 @@
 #pragma once
 #include "vector2.h"
 #include "world_config.h"
+#include "graphics_mode.h"
 
-class gameObject
+struct gameObject
 {
 public:
-	virtual void update() = 0;
-
+	virtual bool update(const bool buffer[]) = 0;
+	virtual std::string get_save() const = 0;
 public:
+#if GRAPHICS_MODE == true
 	gameObject(const char& sprite);
+#else
+	gameObject();
+#endif
 	~gameObject();
 	gameObject(const gameObject&) = delete;
 
-	const void move(const  vector2<int>& movement);
-	const void randomize_position();
+	void randomize_position();
 
-	const void setPosition(const vector2<int>& position) { this->position = position; }
-	const vector2<int> getPosition(void) const { return this->position; }
-	const char& getSprite() const { return this->sprite;  }
-	const void setSprite(const char& sprite) { this->sprite = sprite; }
-	const bool isAlive() const { return this->alive; }
-	const void destroy() { this->alive = false; }
-private:
-	vector2<int> position;
-	char sprite;
-	bool alive = true;
+	vector2<world_size_type> position;
+#if GRAPHICS_MODE == true
+	const char sprite;
+#endif
 };
 

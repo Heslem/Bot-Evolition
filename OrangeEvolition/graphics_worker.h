@@ -1,24 +1,34 @@
 #pragma once
+#include "graphics_mode.h"
+
+#if GRAPHICS_MODE == true
+
 #include <stdio.h>
 #include "vector2.h"
 #include "gameObject.h"
 #include <vector>
+#include "game_list.h"
+#include "world_config.h"
 
 #define clear_screen() printf("\033[H\033[J")
-#define buffer_size_x 16
-#define buffer_size_y 16
-#define BUFFER_SIZE (buffer_size_x * buffer_size_y)
 
-char buffer[buffer_size];
+static char buffer[world_size];
 
-void clear_buffer(const char& symbol) {
+static void buffer_init() {
+	for (register world_size_type i = 0; i < world_size; ++i)
+		buffer[i] = '\n';
+}
 
-	unsigned short counter = 0;
-	for (size_t i = 0; i < buffer_size; i++)
+static void buffer_clear(const char& symbol = ' ') {
+
+	unsigned char counter = 0;
+	register unsigned short i = 0;
+
+	for (; i < world_size; ++i)
 	{
-		if (counter == buffer_size_x - 1) {
-			buffer[i] = '\n';
+		if (counter == world_size_x - 1) {
 			counter = 0;
+			continue;
 		}
 		else {
 			buffer[i] = symbol;
@@ -27,28 +37,28 @@ void clear_buffer(const char& symbol) {
 	}
 }
 
-void buffer_set_pixel(const int& x, const int& y, const char& symbol) {
-	if (x > buffer_size_x - 1 || y > buffer_size_y) return;
+static void buffer_set_pixel(const int& x, const int& y, const char& symbol) {
+	if (x > world_size_x - 2 || x < 0 || y > world_size_y || y < 0) return;
 
-	unsigned int index = y * buffer_size_x + x;
+	world_size_type index = y * world_size_x + x;
 	buffer[index] = symbol;
 }
 
-const void buffer_set_pixel(vector2<int> position, const char& symbol) {
+static const void buffer_set_pixel(vector2<world_size_type> position, const char& symbol) {
 	buffer_set_pixel(position.x, position.y, symbol);
 }
 
-const void buffer_draw_gameObject(const gameObject& object) {
-	buffer_set_pixel(object.getPosition(), object.getSprite());
+static const void buffer_draw_gameObject(const gameObject& object) {
+	buffer_set_pixel(object.position, object.sprite);
 }
 
-void buffer_draw_gameObjects(const std::vector<gameObject*> gameObjects) {
-	for (size_t i = 0; i < gameObjects.size(); i++)
-	{
-		buffer_draw_gameObject(*gameObjects[i]);
-	}
+static void buffer_draw_gameObjects(game_object_list& gameObjects) {
+	for (register world_size_type i = 0; i < gameObjects.size(); ++i)
+		buffer_set_pixel(gameObjects[i].position, gameObjects[i].sprite);
 }
 
-void print_buffer(void) {
+
+static void print_buffer() {
 	printf(buffer);
 }
+#endif //GRAPHICS_MODE

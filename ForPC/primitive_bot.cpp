@@ -8,11 +8,12 @@
 #if GRAPHICS_MODE
 primitive_bot::primitive_bot(world& mainWorld) : gameObject('B'), food(FOOD_WHEN_START), mainWorld(mainWorld)
 {
-	
+	randomizeBrain();
 }
 #else
 primitive_bot::primitive_bot(world& mainWorld) : food(FOOD_WHEN_START), mainWorld(mainWorld)
 {
+	randomizeBrain();
 }
 #endif
 
@@ -41,7 +42,7 @@ primitive_bot::primitive_bot(const primitive_bot& bot) : food(FOOD_WHEN_START), 
 
 bool primitive_bot::update(const bool buffer[])
 {
-	if (position.y < 8) food += 5;
+	if (position.get_y() < 8) food += 5;
 
 	if (food < 0) return false;
 	else food--;
@@ -51,21 +52,21 @@ bool primitive_bot::update(const bool buffer[])
 	switch (brain[counter])
 	{
 	case 1:
-		if (mainWorld.is_free_cell(this->position.x - 1, this->position.y)) position.set_x(this->position.x - 1);
+		if (mainWorld.is_free_cell(this->position.get_x() - 1, this->position.get_y())) position.set_x(this->position.get_x() - 1);
 
 		break;
 	case 2:
-		if (mainWorld.is_free_cell(this->position.x + 1, this->position.y)) position.set_x(this->position.x + 1);
+		if (mainWorld.is_free_cell(this->position.get_x() + 1, this->position.get_y())) position.set_x(this->position.get_x() + 1);
 
 		break;
 
 	case 3:
-		if (mainWorld.is_free_cell(this->position.x, this->position.y + 1)) position.set_y(this->position.y + 1);
+		if (mainWorld.is_free_cell(this->position.get_x(), this->position.get_y() + 1)) position.set_y(this->position.get_y() + 1);
 
 		break;
 
 	case 4:
-		if (mainWorld.is_free_cell(this->position.x, this->position.y - 1)) position.set_y(this->position.y - 1);
+		if (mainWorld.is_free_cell(this->position.get_x(), this->position.get_y() - 1)) position.set_y(this->position.get_y() - 1);
 
 		break;
 
@@ -74,8 +75,8 @@ bool primitive_bot::update(const bool buffer[])
 			bool create = true;
 			counter++;
 
-			int x = this->position.x;
-			int y = this->position.y;
+			int x = this->position.get_x();
+			int y = this->position.get_y();
 
 			switch (brain[counter])
 			{
@@ -100,7 +101,7 @@ bool primitive_bot::update(const bool buffer[])
 			if (!create) break;
 
 			vector2<world_size_type> positionBot = vector2<world_size_type>(x, y);
-			if (positionBot.x != x || position.y != y) break;
+			if (positionBot.get_x() != x || position.get_y() != y) break;
 
 			if (mainWorld.is_free_cell(positionBot)) {
 				primitive_bot* bot = new primitive_bot(*this);
@@ -125,8 +126,8 @@ std::string primitive_bot::get_save() const
 		brainData.append(std::to_string(brain[i]));
 
 	return std::string("bot: ") + "\n" +
-		"x: " + std::to_string(position.x) + "\n" +
-		"y: " + std::to_string(position.y) + "\n" +
+		"x: " + std::to_string(position.get_x()) + "\n" +
+		"y: " + std::to_string(position.get_y()) + "\n" +
 		"food: " + std::to_string(food) + "\n" +
 		"brain: " + brainData.c_str();
 }

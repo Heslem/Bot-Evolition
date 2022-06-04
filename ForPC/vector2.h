@@ -5,14 +5,16 @@
 template<typename T>
 struct vector2
 {
-public:
+private:
 	T x;
 	T y;
-
+public:
 	vector2();
 	vector2(const T& x, const T& y);
 	vector2(const vector2& vector);
 	
+	T get_x() const { return x; }
+	T get_y() const { return y; }
 	void set_position(const T& x, const T& y);
 	void set_x(const T& x);
 	void set_y(const T& y);

@@ -2,599 +2,599 @@ bot:
 x: 4
 y: 10
 food: 400
-brain: 2425231124
+brain: 4125345545
 end.
 bot: 
 x: 5
 y: 31
 food: 400
-brain: 1223534143
+brain: 5151313534
 end.
 bot: 
 x: 13
 y: 2
 food: 400
-brain: 2231311523
+brain: 1224342252
 end.
 bot: 
 x: 15
 y: 23
 food: 400
-brain: 3113134535
+brain: 2353544221
 end.
 bot: 
 x: 17
 y: 19
 food: 400
-brain: 5513115134
+brain: 4244235521
 end.
 bot: 
 x: 18
 y: 10
 food: 400
-brain: 3144452554
+brain: 4542531243
 end.
 bot: 
 x: 28
 y: 18
 food: 400
-brain: 4235353352
+brain: 4321334224
 end.
 bot: 
 x: 12
 y: 10
 food: 400
-brain: 5322443511
+brain: 5452153412
 end.
 bot: 
 x: 7
 y: 20
 food: 400
-brain: 3414411422
+brain: 5151512555
 end.
 bot: 
 x: 29
 y: 28
 food: 400
-brain: 4124341441
+brain: 5115335515
 end.
 bot: 
 x: 13
 y: 8
 food: 400
-brain: 5153254314
+brain: 4523441313
 end.
 bot: 
 x: 26
 y: 31
 food: 400
-brain: 2234144434
+brain: 2243432252
 end.
 bot: 
 x: 31
 y: 5
 food: 400
-brain: 1425442342
+brain: 3242525553
 end.
 bot: 
 x: 29
 y: 14
 food: 400
-brain: 4311341311
+brain: 5235525314
 end.
 bot: 
 x: 24
 y: 7
 food: 400
-brain: 3452252314
+brain: 2121512524
 end.
 bot: 
 x: 31
 y: 8
 food: 400
-brain: 5111112454
+brain: 1154435532
 end.
 bot: 
 x: 19
 y: 20
 food: 400
-brain: 5341411431
+brain: 4311235124
 end.
 bot: 
 x: 9
 y: 14
 food: 400
-brain: 2222133334
+brain: 5251311315
 end.
 bot: 
 x: 28
 y: 4
 food: 400
-brain: 5145513313
+brain: 4553233234
 end.
 bot: 
 x: 7
 y: 12
 food: 400
-brain: 2115343142
+brain: 1324241525
 end.
 bot: 
 x: 4
 y: 32
 food: 400
-brain: 4535123515
+brain: 1253152233
 end.
 bot: 
 x: 30
 y: 27
 food: 400
-brain: 1524415235
+brain: 3134412231
 end.
 bot: 
 x: 25
 y: 10
 food: 400
-brain: 5532445334
+brain: 3544251541
 end.
 bot: 
 x: 32
 y: 6
 food: 400
-brain: 1242114213
+brain: 1335214342
 end.
 bot: 
 x: 21
 y: 30
 food: 400
-brain: 1435451345
+brain: 4223241122
 end.
 bot: 
 x: 29
 y: 12
 food: 400
-brain: 2245112454
+brain: 4324142343
 end.
 bot: 
 x: 22
 y: 23
 food: 400
-brain: 3433431122
+brain: 2121521453
 end.
 bot: 
 x: 28
 y: 6
 food: 400
-brain: 1422453351
+brain: 5512511325
 end.
 bot: 
 x: 14
 y: 20
 food: 400
-brain: 4312542153
+brain: 5554551332
 end.
 bot: 
 x: 11
 y: 10
 food: 400
-brain: 5343331142
+brain: 2225452451
 end.
 bot: 
 x: 28
 y: 29
 food: 400
-brain: 2314314433
+brain: 2343215423
 end.
 bot: 
 x: 19
 y: 15
 food: 400
-brain: 2153434225
+brain: 1122142222
 end.
 bot: 
 x: 27
 y: 1
 food: 400
-brain: 1234335233
+brain: 5224125122
 end.
 bot: 
 x: 15
 y: 17
 food: 400
-brain: 4512443121
+brain: 3422552324
 end.
 bot: 
 x: 25
 y: 1
 food: 400
-brain: 5224522212
+brain: 5432134355
 end.
 bot: 
 x: 30
 y: 23
 food: 400
-brain: 3331415242
+brain: 5552453332
 end.
 bot: 
 x: 10
 y: 19
 food: 400
-brain: 2132442345
+brain: 3553333453
 end.
 bot: 
 x: 23
 y: 19
 food: 400
-brain: 3133545343
+brain: 5532423233
 end.
 bot: 
 x: 30
 y: 31
 food: 400
-brain: 2345312231
+brain: 3422415113
 end.
 bot: 
 x: 29
 y: 10
 food: 400
-brain: 5514141443
+brain: 3153243552
 end.
 bot: 
 x: 16
 y: 14
 food: 400
-brain: 4522451242
+brain: 2325425442
 end.
 bot: 
 x: 19
 y: 21
 food: 400
-brain: 1223345144
+brain: 3443255415
 end.
 bot: 
 x: 1
 y: 5
 food: 400
-brain: 2525453312
+brain: 1511134412
 end.
 bot: 
 x: 17
 y: 7
 food: 400
-brain: 3242123415
+brain: 4221154314
 end.
 bot: 
 x: 5
 y: 12
 food: 400
-brain: 4224213244
+brain: 3342131331
 end.
 bot: 
 x: 24
 y: 17
 food: 400
-brain: 3413255521
+brain: 4241221434
 end.
 bot: 
 x: 28
 y: 19
 food: 400
-brain: 5314124432
+brain: 3321123514
 end.
 bot: 
 x: 3
 y: 2
 food: 400
-brain: 2241354145
+brain: 1511141521
 end.
 bot: 
 x: 3
 y: 23
 food: 400
-brain: 3252314231
+brain: 2323424244
 end.
 bot: 
 x: 30
 y: 18
 food: 400
-brain: 4551433212
+brain: 4511331111
 end.
 bot: 
 x: 12
 y: 2
 food: 400
-brain: 5515224114
+brain: 3221435121
 end.
 bot: 
 x: 27
 y: 32
 food: 400
-brain: 5513131142
+brain: 4231134511
 end.
 bot: 
 x: 11
 y: 17
 food: 400
-brain: 5525534512
+brain: 3231551353
 end.
 bot: 
 x: 3
 y: 26
 food: 400
-brain: 3413454344
+brain: 2215145144
 end.
 bot: 
 x: 19
 y: 26
 food: 400
-brain: 4413131255
+brain: 5213144321
 end.
 bot: 
 x: 10
 y: 30
 food: 400
-brain: 3322224441
+brain: 3115555435
 end.
 bot: 
 x: 1
 y: 13
 food: 400
-brain: 4525415243
+brain: 3311424221
 end.
 bot: 
 x: 6
 y: 31
 food: 400
-brain: 1114132353
+brain: 3312515544
 end.
 bot: 
 x: 22
 y: 26
 food: 400
-brain: 2114124331
+brain: 1412243521
 end.
 bot: 
 x: 1
 y: 10
 food: 400
-brain: 5111153515
+brain: 3443412545
 end.
 bot: 
 x: 11
 y: 19
 food: 400
-brain: 5111134322
+brain: 3155543325
 end.
 bot: 
 x: 13
 y: 10
 food: 400
-brain: 2553433453
+brain: 5155135425
 end.
 bot: 
 x: 32
 y: 20
 food: 400
-brain: 2432455124
+brain: 1521134113
 end.
 bot: 
 x: 23
 y: 8
 food: 400
-brain: 1542323125
+brain: 2122414254
 end.
 bot: 
 x: 21
 y: 32
 food: 400
-brain: 2221221325
+brain: 2315534413
 end.
 bot: 
 x: 31
 y: 23
 food: 400
-brain: 2123332443
+brain: 1321513531
 end.
 bot: 
 x: 29
 y: 14
 food: 400
-brain: 3441112224
+brain: 2231114344
 end.
 bot: 
 x: 7
 y: 15
 food: 400
-brain: 4432555241
+brain: 5552413353
 end.
 bot: 
 x: 16
 y: 4
 food: 400
-brain: 5235413453
+brain: 4553421234
 end.
 bot: 
 x: 10
 y: 24
 food: 400
-brain: 2523351335
+brain: 3532244144
 end.
 bot: 
 x: 32
 y: 2
 food: 400
-brain: 2434325312
+brain: 3452242222
 end.
 bot: 
 x: 16
 y: 10
 food: 400
-brain: 3444342355
+brain: 4325311353
 end.
 bot: 
 x: 14
 y: 2
 food: 400
-brain: 4253111354
+brain: 2552355414
 end.
 bot: 
 x: 31
 y: 18
 food: 400
-brain: 5551315455
+brain: 1325134112
 end.
 bot: 
 x: 29
 y: 30
 food: 400
-brain: 4432332424
+brain: 1135335435
 end.
 bot: 
 x: 19
 y: 23
 food: 400
-brain: 5241452335
+brain: 2521121354
 end.
 bot: 
 x: 7
 y: 19
 food: 400
-brain: 4115233142
+brain: 5542341222
 end.
 bot: 
 x: 17
 y: 30
 food: 400
-brain: 4214245451
+brain: 3332352431
 end.
 bot: 
 x: 16
 y: 5
 food: 400
-brain: 1134535224
+brain: 5345121453
 end.
 bot: 
 x: 24
 y: 11
 food: 400
-brain: 2214131413
+brain: 3251144323
 end.
 bot: 
 x: 24
 y: 3
 food: 400
-brain: 3113324311
+brain: 3315124351
 end.
 bot: 
 x: 26
 y: 9
 food: 400
-brain: 5252424522
+brain: 1353135532
 end.
 bot: 
 x: 20
 y: 13
 food: 400
-brain: 4213114425
+brain: 1325113144
 end.
 bot: 
 x: 10
 y: 12
 food: 400
-brain: 3351353435
+brain: 5555521552
 end.
 bot: 
 x: 31
 y: 19
 food: 400
-brain: 2533352532
+brain: 3215321435
 end.
 bot: 
 x: 21
 y: 20
 food: 400
-brain: 4433112334
+brain: 4535421354
 end.
 bot: 
 x: 13
 y: 31
 food: 400
-brain: 5423443333
+brain: 2351333542
 end.
 bot: 
 x: 22
 y: 21
 food: 400
-brain: 4455145341
+brain: 3541135133
 end.
 bot: 
 x: 32
 y: 21
 food: 400
-brain: 1321123112
+brain: 1245121453
 end.
 bot: 
 x: 5
 y: 21
 food: 400
-brain: 2354212515
+brain: 3521551252
 end.
 bot: 
 x: 31
 y: 26
 food: 400
-brain: 2232443452
+brain: 4454335133
 end.
 bot: 
 x: 16
 y: 22
 food: 400
-brain: 3242314554
+brain: 1335331342
 end.
 bot: 
 x: 3
 y: 19
 food: 400
-brain: 1333424322
+brain: 4333355214
 end.
 bot: 
 x: 13
 y: 21
 food: 400
-brain: 5335312332
+brain: 5224335431
 end.
 bot: 
 x: 20
 y: 16
 food: 400
-brain: 4235534544
+brain: 3135145442
 end.
 bot: 
 x: 14
 y: 17
 food: 400
-brain: 3535412423
+brain: 4512252354
 end.
 bot: 
 x: 20
 y: 9
 food: 400
-brain: 3142212135
+brain: 2453342215
 end.
 bot: 
 x: 22
 y: 16
 food: 400
-brain: 5555335154
+brain: 3531254531
 end.
 bot: 
 x: 26
 y: 7
 food: 400
-brain: 3434244112
+brain: 3352222114
 end.
 bot: 
 x: 11
 y: 30
 food: 400
-brain: 4522144354
+brain: 5443332521
 end.

@@ -141,7 +141,7 @@
   <ItemGroup>
     <ClInclude Include="buffer_config.h" />
     <ClInclude Include="gameObject.h" />
-    <ClInclude Include="game_list.h" />
+    <ClInclude Include="game_object_list.h" />
     <ClInclude Include="graphics_mode.h" />
     <ClInclude Include="graphics_worker.h" />
     <ClInclude Include="primitive_bot.h" />
@@ -152,7 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gameObject.cpp" />
-    <ClCompile Include="game_list.cpp" />
+    <ClCompile Include="game_object_list.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="primitive_bot.cpp" />
     <ClCompile Include="save.cpp" />
