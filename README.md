@@ -15,6 +15,6 @@ I create project ForPC, for fast debugging.
 # Logic of bot
 Any bots have "brain", array of commands (numbers)
 Command "1" can mean move left. Command "2" move right.
-So, commands can be with arguments. Command "5" have one argument. This argument mean side where he spawn new bot.
+So, commands can be with arguments. Command "5" have one argument. This argument mean side where the bot spawn a new bot.
 
 I plan add a many command, and command "goto" which will change bot brain counter. Maybe i add command "if". This command can made behaivor of bots very hard to understanding, behaivor will become better.
