@@ -1,0 +1,600 @@
+bot: 
+x: 4
+y: 10
+food: 400
+brain: 2425231124
+end.
+bot: 
+x: 5
+y: 31
+food: 400
+brain: 1223534143
+end.
+bot: 
+x: 13
+y: 2
+food: 400
+brain: 2231311523
+end.
+bot: 
+x: 15
+y: 23
+food: 400
+brain: 3113134535
+end.
+bot: 
+x: 17
+y: 19
+food: 400
+brain: 5513115134
+end.
+bot: 
+x: 18
+y: 10
+food: 400
+brain: 3144452554
+end.
+bot: 
+x: 28
+y: 18
+food: 400
+brain: 4235353352
+end.
+bot: 
+x: 12
+y: 10
+food: 400
+brain: 5322443511
+end.
+bot: 
+x: 7
+y: 20
+food: 400
+brain: 3414411422
+end.
+bot: 
+x: 29
+y: 28
+food: 400
+brain: 4124341441
+end.
+bot: 
+x: 13
+y: 8
+food: 400
+brain: 5153254314
+end.
+bot: 
+x: 26
+y: 31
+food: 400
+brain: 2234144434
+end.
+bot: 
+x: 31
+y: 5
+food: 400
+brain: 1425442342
+end.
+bot: 
+x: 29
+y: 14
+food: 400
+brain: 4311341311
+end.
+bot: 
+x: 24
+y: 7
+food: 400
+brain: 3452252314
+end.
+bot: 
+x: 31
+y: 8
+food: 400
+brain: 5111112454
+end.
+bot: 
+x: 19
+y: 20
+food: 400
+brain: 5341411431
+end.
+bot: 
+x: 9
+y: 14
+food: 400
+brain: 2222133334
+end.
+bot: 
+x: 28
+y: 4
+food: 400
+brain: 5145513313
+end.
+bot: 
+x: 7
+y: 12
+food: 400
+brain: 2115343142
+end.
+bot: 
+x: 4
+y: 32
+food: 400
+brain: 4535123515
+end.
+bot: 
+x: 30
+y: 27
+food: 400
+brain: 1524415235
+end.
+bot: 
+x: 25
+y: 10
+food: 400
+brain: 5532445334
+end.
+bot: 
+x: 32
+y: 6
+food: 400
+brain: 1242114213
+end.
+bot: 
+x: 21
+y: 30
+food: 400
+brain: 1435451345
+end.
+bot: 
+x: 29
+y: 12
+food: 400
+brain: 2245112454
+end.
+bot: 
+x: 22
+y: 23
+food: 400
+brain: 3433431122
+end.
+bot: 
+x: 28
+y: 6
+food: 400
+brain: 1422453351
+end.
+bot: 
+x: 14
+y: 20
+food: 400
+brain: 4312542153
+end.
+bot: 
+x: 11
+y: 10
+food: 400
+brain: 5343331142
+end.
+bot: 
+x: 28
+y: 29
+food: 400
+brain: 2314314433
+end.
+bot: 
+x: 19
+y: 15
+food: 400
+brain: 2153434225
+end.
+bot: 
+x: 27
+y: 1
+food: 400
+brain: 1234335233
+end.
+bot: 
+x: 15
+y: 17
+food: 400
+brain: 4512443121
+end.
+bot: 
+x: 25
+y: 1
+food: 400
+brain: 5224522212
+end.
+bot: 
+x: 30
+y: 23
+food: 400
+brain: 3331415242
+end.
+bot: 
+x: 10
+y: 19
+food: 400
+brain: 2132442345
+end.
+bot: 
+x: 23
+y: 19
+food: 400
+brain: 3133545343
+end.
+bot: 
+x: 30
+y: 31
+food: 400
+brain: 2345312231
+end.
+bot: 
+x: 29
+y: 10
+food: 400
+brain: 5514141443
+end.
+bot: 
+x: 16
+y: 14
+food: 400
+brain: 4522451242
+end.
+bot: 
+x: 19
+y: 21
+food: 400
+brain: 1223345144
+end.
+bot: 
+x: 1
+y: 5
+food: 400
+brain: 2525453312
+end.
+bot: 
+x: 17
+y: 7
+food: 400
+brain: 3242123415
+end.
+bot: 
+x: 5
+y: 12
+food: 400
+brain: 4224213244
+end.
+bot: 
+x: 24
+y: 17
+food: 400
+brain: 3413255521
+end.
+bot: 
+x: 28
+y: 19
+food: 400
+brain: 5314124432
+end.
+bot: 
+x: 3
+y: 2
+food: 400
+brain: 2241354145
+end.
+bot: 
+x: 3
+y: 23
+food: 400
+brain: 3252314231
+end.
+bot: 
+x: 30
+y: 18
+food: 400
+brain: 4551433212
+end.
+bot: 
+x: 12
+y: 2
+food: 400
+brain: 5515224114
+end.
+bot: 
+x: 27
+y: 32
+food: 400
+brain: 5513131142
+end.
+bot: 
+x: 11
+y: 17
+food: 400
+brain: 5525534512
+end.
+bot: 
+x: 3
+y: 26
+food: 400
+brain: 3413454344
+end.
+bot: 
+x: 19
+y: 26
+food: 400
+brain: 4413131255
+end.
+bot: 
+x: 10
+y: 30
+food: 400
+brain: 3322224441
+end.
+bot: 
+x: 1
+y: 13
+food: 400
+brain: 4525415243
+end.
+bot: 
+x: 6
+y: 31
+food: 400
+brain: 1114132353
+end.
+bot: 
+x: 22
+y: 26
+food: 400
+brain: 2114124331
+end.
+bot: 
+x: 1
+y: 10
+food: 400
+brain: 5111153515
+end.
+bot: 
+x: 11
+y: 19
+food: 400
+brain: 5111134322
+end.
+bot: 
+x: 13
+y: 10
+food: 400
+brain: 2553433453
+end.
+bot: 
+x: 32
+y: 20
+food: 400
+brain: 2432455124
+end.
+bot: 
+x: 23
+y: 8
+food: 400
+brain: 1542323125
+end.
+bot: 
+x: 21
+y: 32
+food: 400
+brain: 2221221325
+end.
+bot: 
+x: 31
+y: 23
+food: 400
+brain: 2123332443
+end.
+bot: 
+x: 29
+y: 14
+food: 400
+brain: 3441112224
+end.
+bot: 
+x: 7
+y: 15
+food: 400
+brain: 4432555241
+end.
+bot: 
+x: 16
+y: 4
+food: 400
+brain: 5235413453
+end.
+bot: 
+x: 10
+y: 24
+food: 400
+brain: 2523351335
+end.
+bot: 
+x: 32
+y: 2
+food: 400
+brain: 2434325312
+end.
+bot: 
+x: 16
+y: 10
+food: 400
+brain: 3444342355
+end.
+bot: 
+x: 14
+y: 2
+food: 400
+brain: 4253111354
+end.
+bot: 
+x: 31
+y: 18
+food: 400
+brain: 5551315455
+end.
+bot: 
+x: 29
+y: 30
+food: 400
+brain: 4432332424
+end.
+bot: 
+x: 19
+y: 23
+food: 400
+brain: 5241452335
+end.
+bot: 
+x: 7
+y: 19
+food: 400
+brain: 4115233142
+end.
+bot: 
+x: 17
+y: 30
+food: 400
+brain: 4214245451
+end.
+bot: 
+x: 16
+y: 5
+food: 400
+brain: 1134535224
+end.
+bot: 
+x: 24
+y: 11
+food: 400
+brain: 2214131413
+end.
+bot: 
+x: 24
+y: 3
+food: 400
+brain: 3113324311
+end.
+bot: 
+x: 26
+y: 9
+food: 400
+brain: 5252424522
+end.
+bot: 
+x: 20
+y: 13
+food: 400
+brain: 4213114425
+end.
+bot: 
+x: 10
+y: 12
+food: 400
+brain: 3351353435
+end.
+bot: 
+x: 31
+y: 19
+food: 400
+brain: 2533352532
+end.
+bot: 
+x: 21
+y: 20
+food: 400
+brain: 4433112334
+end.
+bot: 
+x: 13
+y: 31
+food: 400
+brain: 5423443333
+end.
+bot: 
+x: 22
+y: 21
+food: 400
+brain: 4455145341
+end.
+bot: 
+x: 32
+y: 21
+food: 400
+brain: 1321123112
+end.
+bot: 
+x: 5
+y: 21
+food: 400
+brain: 2354212515
+end.
+bot: 
+x: 31
+y: 26
+food: 400
+brain: 2232443452
+end.
+bot: 
+x: 16
+y: 22
+food: 400
+brain: 3242314554
+end.
+bot: 
+x: 3
+y: 19
+food: 400
+brain: 1333424322
+end.
+bot: 
+x: 13
+y: 21
+food: 400
+brain: 5335312332
+end.
+bot: 
+x: 20
+y: 16
+food: 400
+brain: 4235534544
+end.
+bot: 
+x: 14
+y: 17
+food: 400
+brain: 3535412423
+end.
+bot: 
+x: 20
+y: 9
+food: 400
+brain: 3142212135
+end.
+bot: 
+x: 22
+y: 16
+food: 400
+brain: 5555335154
+end.
+bot: 
+x: 26
+y: 7
+food: 400
+brain: 3434244112
+end.
+bot: 
+x: 11
+y: 30
+food: 400
+brain: 4522144354
+end.
