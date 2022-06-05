@@ -100,7 +100,7 @@ bool primitive_bot::update(const bool buffer[])
 			}
 			if (!create) break;
 
-			vector2<world_size_type> positionBot = vector2<world_size_type>(x, y);
+			vector2<game_type> positionBot = vector2<game_type>(x, y);
 			if (positionBot.get_x() != x || position.get_y() != y) break;
 
 			if (mainWorld.is_free_cell(positionBot)) {

@@ -19,7 +19,7 @@ public:
 
 	void randomize_position();
 
-	vector2<world_size_type> position;
+	vector2<game_type> position;
 #if GRAPHICS_MODE == true
 	const char sprite;
 #endif

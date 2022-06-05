@@ -13,13 +13,13 @@ struct world final
 	void create(gameObject* object);
 	void save_world() const;
 
-	bool is_busy_cell(const world_size_type& x, const world_size_type& y) const;
-	bool is_free_cell(const world_size_type& x, const world_size_type& y) const;
+	bool is_busy_cell(const game_type& x, const game_type& y) const;
+	bool is_free_cell(const game_type& x, const game_type& y) const;
 
-	bool is_busy_cell(const vector2<world_size_type>& position) const;
-	bool is_free_cell(const vector2<world_size_type>& position) const;
+	bool is_busy_cell(const vector2<game_type>& position) const;
+	bool is_free_cell(const vector2<game_type>& position) const;
 
-	world_size_type get_index(const world_size_type& x, const world_size_type& y) const;
+	game_type get_index(const game_type& x, const game_type& y) const;
 
 	bool is_full() const { return gameObjects.is_full(); };
 

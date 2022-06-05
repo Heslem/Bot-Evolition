@@ -15,7 +15,7 @@
 static char buffer[world_size];
 
 static void buffer_init() {
-	for (register world_size_type i = 0; i < world_size; ++i)
+	for (register game_type i = 0; i < world_size; ++i)
 		buffer[i] = '\n';
 }
 
@@ -40,11 +40,11 @@ static void buffer_clear(const char& symbol = ' ') {
 static void buffer_set_pixel(const int& x, const int& y, const char& symbol) {
 	if (x > world_size_x - 2 || x < 0 || y > world_size_y || y < 0) return;
 
-	world_size_type index = y * world_size_x + x;
+	game_type index = y * world_size_x + x;
 	buffer[index] = symbol;
 }
 
-static const void buffer_set_pixel(vector2<world_size_type> position, const char& symbol) {
+static const void buffer_set_pixel(vector2<game_type> position, const char& symbol) {
 	buffer_set_pixel(position.x, position.y, symbol);
 }
 
@@ -53,7 +53,7 @@ static const void buffer_draw_gameObject(const gameObject& object) {
 }
 
 static void buffer_draw_gameObjects(game_object_list& gameObjects) {
-	for (register world_size_type i = 0; i < gameObjects.size(); ++i)
+	for (register game_type i = 0; i < gameObjects.size(); ++i)
 		buffer_set_pixel(gameObjects[i].position, gameObjects[i].sprite);
 }
 
