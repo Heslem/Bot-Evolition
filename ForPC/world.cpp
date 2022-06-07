@@ -7,11 +7,9 @@
 
 world::world()  
 {
-    for (game_type i = 0; i < 100; i++)
+    for (game_type i = 0; i < 50; i++)
     {
         primitive_bot* object = new primitive_bot(*this);
-
-        object->randomizeBrain();
         object->randomize_position();
 
         this->create(object);
@@ -30,14 +28,14 @@ void world::update()
     clear_collision();
 
     // current_size not changing when program run. It changing only if object was deleted, but no created.
-    static game_type current_size = gameObjects.size();
-    
-    for (register game_type i = 0; i < current_size; ++i)
+    game_type current_size = gameObjects.size();
+    for (game_type i = 0; i < current_size; ++i)
     {
         collisions[get_index(gameObjects[i].position.get_x(), gameObjects[i].position.get_y())] = false;
 
         if (this->gameObjects[i].update(collisions)) {
             collisions[get_index(gameObjects[i].position.get_x(), gameObjects[i].position.get_y())] = true;
+
         }
         else {
             this->gameObjects.erase(i);
@@ -45,10 +43,6 @@ void world::update()
         }
     }
 
-
-    // For debug:
-    /*std::string cmd = "title " + std::to_string(gameObjects.size());
-    system(cmd.c_str());*/
 }
 
 void world::create(gameObject* object)
@@ -89,6 +83,15 @@ bool world::is_free_cell(const vector2<game_type>& position) const
     return !is_busy_cell(position.get_x(), position.get_y());
 }
 
+// Very slow thing
+gameObject* world::get_game_object(const game_type& x, const game_type& y) const
+{
+    for (game_type i = 0; i < gameObjects.size(); ++i)
+        if (gameObjects[i].position.get_x() == x && gameObjects[i].position.get_y() == y) return &gameObjects[i];
+
+    return nullptr;
+}
+
 game_type world::get_index(const game_type& x, const game_type& y) const
 {
     return y * world_size_x + x;
@@ -96,7 +99,7 @@ game_type world::get_index(const game_type& x, const game_type& y) const
 
 void world::clear_collision()
 {
-    for (register game_type i = 0; i < world_size; ++i)
+    for (game_type i = 0; i < world_size; ++i)
     {
         if (i < gameObjects.size()) {
             collisions[get_index(gameObjects[i].position.get_x(), gameObjects[i].position.get_y())] = true;

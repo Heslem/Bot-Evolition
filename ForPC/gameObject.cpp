@@ -20,3 +20,8 @@ void gameObject::randomize_position()
 {
 	position = position.random(world_size_x, world_size_y);
 }
+
+void gameObject::destroy()
+{
+	this->alive = false;
+}

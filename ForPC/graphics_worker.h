@@ -16,14 +16,14 @@
 static char buffer[world_size];
 
 static void buffer_init() {
-	for (register game_type i = 0; i < world_size; ++i)
+	for (game_type i = 0; i < world_size; ++i)
 		buffer[i] = '\n';
 }
 
 static void buffer_clear(const char& symbol = ' ') {
 
-	register unsigned char counter = 0;
-	register unsigned short i = 0;
+	unsigned short counter = 0;
+	unsigned short i = 0;
 
 	for (; i < world_size; ++i)
 	{
@@ -54,7 +54,7 @@ static void buffer_draw_gameObject(const gameObject& object) {
 }
 
 static void buffer_draw_gameObjects(game_object_list& gameObjects) {
-	for (register game_type i = 0; i < gameObjects.size(); ++i)
+	for (game_type i = 0; i < gameObjects.size(); ++i)
 		buffer_set_pixel(gameObjects[i].position, gameObjects[i].sprite);
 }
 

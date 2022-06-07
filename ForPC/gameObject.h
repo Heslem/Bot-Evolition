@@ -18,10 +18,13 @@ public:
 	gameObject(const gameObject&) = delete;
 
 	void randomize_position();
+	void destroy();
 
 	vector2<game_type> position;
 #if GRAPHICS_MODE == true
 	const char sprite;
 #endif
+protected:
+	bool alive = true;
 };
 

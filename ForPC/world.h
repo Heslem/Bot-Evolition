@@ -18,6 +18,7 @@ struct world final
 
 	bool is_busy_cell(const vector2<game_type>& position) const;
 	bool is_free_cell(const vector2<game_type>& position) const;
+	gameObject* get_game_object(const game_type& x, const game_type& y) const;
 
 	game_type get_index(const game_type& x, const game_type& y) const;
 

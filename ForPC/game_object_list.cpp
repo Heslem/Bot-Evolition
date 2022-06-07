@@ -3,8 +3,7 @@
 
 game_object_list::game_object_list() : pointer(0)
 {
-	register game_type i = 0;
-	for (; i < world_size; ++i)
+	for (game_type i = 0; i < world_size; ++i)
 		this->data[i] = nullptr;
 }
 
@@ -41,12 +40,10 @@ void game_object_list::erase(const game_type& i)
 
 void game_object_list::move_left(const game_type& offset)
 {
-	register game_type j = offset;
+	game_type j = offset;
 	for (; j < pointer; ++j)
-	{
 		this->data[j] = this->data[j + 1];
-	}
 
 	delete this->data[j];
-	this->data[j] = nullptr; // i delete data[j], and after set it to nullptr. I don't know this good for memory, or this BIG mistake.
+	this->data[j] = nullptr; 
 }

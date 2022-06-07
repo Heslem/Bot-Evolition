@@ -4,8 +4,8 @@
 
 typedef unsigned char type_brain;
 
-constexpr type_brain BRAIN_SIZE = 10;
-constexpr type_brain MAX_COMMAND = 5;
+constexpr type_brain BRAIN_SIZE = 12;
+constexpr type_brain MAX_COMMAND = 6;
 
 constexpr unsigned short CHANGE_EVOLITION = 10;
 constexpr unsigned short FOOD_WHEN_START = 400;

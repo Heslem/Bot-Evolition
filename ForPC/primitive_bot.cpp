@@ -16,7 +16,7 @@ primitive_bot::primitive_bot(world& mainWorld) : food(FOOD_WHEN_START), mainWorl
 	randomizeBrain();
 }
 #endif
-
+#include <Windows.h>
 primitive_bot::~primitive_bot()
 {
 }
@@ -24,14 +24,14 @@ primitive_bot::~primitive_bot()
 #if GRAPHICS_MODE
 primitive_bot::primitive_bot(const primitive_bot& bot) : gameObject('B'), food(FOOD_WHEN_START), mainWorld(bot.mainWorld)
 {
-	for (register type_brain i = 0; i < BRAIN_SIZE; ++i)
+	for (type_brain i = 0; i < BRAIN_SIZE; ++i)
 		this->brain[i] = bot.brain[i];
 	evolition();
 }
 #else
 primitive_bot::primitive_bot(const primitive_bot& bot) : food(FOOD_WHEN_START), mainWorld(bot.mainWorld)
 {
-	register type_brain i = 0;
+	type_brain i = 0;
 	for (; i < BRAIN_SIZE; ++i)
 	{
 		this->brain[i] = bot.brain[i];
@@ -42,35 +42,35 @@ primitive_bot::primitive_bot(const primitive_bot& bot) : food(FOOD_WHEN_START), 
 
 bool primitive_bot::update(const bool buffer[])
 {
-	if (position.get_y() < 8) food += 5;
-
-	if (food < 0) return false;
+	if (food <= 0) destroy();
 	else food--;
 
+	if (position.get_y() < 8) food += 40;
 	if (counter == BRAIN_SIZE) counter = 0;
 
-	switch (brain[counter])
+	type_brain command = brain[counter];
+	switch (command)
 	{
-	case 1:
+	case 1: // move -x
 		if (mainWorld.is_free_cell(this->position.get_x() - 1, this->position.get_y())) position.set_x(this->position.get_x() - 1);
 
 		break;
-	case 2:
+	case 2: // move +x
 		if (mainWorld.is_free_cell(this->position.get_x() + 1, this->position.get_y())) position.set_x(this->position.get_x() + 1);
 
 		break;
 
-	case 3:
+	case 3: // move +y
 		if (mainWorld.is_free_cell(this->position.get_x(), this->position.get_y() + 1)) position.set_y(this->position.get_y() + 1);
 
 		break;
 
-	case 4:
+	case 4: // move -y
 		if (mainWorld.is_free_cell(this->position.get_x(), this->position.get_y() - 1)) position.set_y(this->position.get_y() - 1);
 
 		break;
 
-	case 5:
+	case 5: // spawn new bot
 		if (food > 500 && !mainWorld.is_full()) {
 			bool create = true;
 			counter++;
@@ -112,11 +112,55 @@ bool primitive_bot::update(const bool buffer[])
 			}
 		}
 		break;
+
+	case 6: // kill
+		counter++;
+		bool killBot = true;
+		game_type x = this->position.get_x();
+		game_type y = this->position.get_y();
+		//getting side
+		switch (brain[counter])
+		{
+		case 1:
+			x--;
+			break;
+		case 2:
+			x++;
+			break;
+
+		case 3:
+			y++;
+			break;
+
+		case 4:
+			y--;
+			break;
+		}
+
+		if (x > world_size_x - 1) killBot = false;
+		else if (x < 2) killBot = false;
+
+		if (y > world_size_y - 1) killBot = false;
+		else if (y < 2)  killBot = false;
+
+		if (x == this->position.get_x() && y == this->position.get_y()) killBot = false;
+
+		if (killBot &&
+			mainWorld.is_busy_cell(x, y)) {
+			auto object = mainWorld.get_game_object(x, y);
+			if (object != nullptr)
+			{
+				object->destroy();
+				food += 400;
+			}
+		}
+
+		break;
 	}
 
 	counter++;
 
-	return true;
+	return alive;
 }
 
 std::string primitive_bot::get_save() const
@@ -141,7 +185,7 @@ static const std::uniform_int_distribution<std::mt19937::result_type> b_evo(0, B
 
 void primitive_bot::randomizeBrain()
 {
-	for (register type_brain i = 0; i < BRAIN_SIZE; ++i)
+	for (type_brain i = 0; i < BRAIN_SIZE; ++i)
 		brain[i] = c_evo(rng);
 }
 
