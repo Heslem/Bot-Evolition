@@ -32,7 +32,7 @@ struct world final
 #endif
 
 private:
-	unsigned long count_saves = 0;
+	unsigned long long count_saves = 0;
 	unsigned long long next_steps_to_save;
 	unsigned long long steps;
 

@@ -14,7 +14,7 @@ public:
 #else
 	gameObject();
 #endif
-	~gameObject();
+	virtual ~gameObject();
 	gameObject(const gameObject&) = delete;
 
 	void randomize_position();

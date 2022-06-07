@@ -32,10 +32,12 @@ void world::update()
     game_type current_size = gameObjects.size();
     for (game_type i = 0; i < current_size; ++i)
     {
-        collisions[get_index(gameObjects[i].position.get_x(), gameObjects[i].position.get_y())] = false;
+        gameObject& object = gameObjects[i];
+
+        collisions[get_index(object.position.get_x(), object.position.get_y())] = false;
 
         if (this->gameObjects[i].update()) {
-            collisions[get_index(gameObjects[i].position.get_x(), gameObjects[i].position.get_y())] = true;
+            collisions[get_index(object.position.get_x(), object.position.get_y())] = true;
 
         }
         else {
@@ -61,13 +63,11 @@ void world::create(gameObject* object)
 
 void world::save_world()
 {
-    save* lastSave = new save();
+    save current_save;
 
     std::string name = ("name_" + std::to_string(count_saves) + ".txt");
     
-    lastSave->saveObjects(gameObjects, name.c_str());
-
-    delete lastSave;
+    current_save.saveObjects(gameObjects, name.c_str());
 
     count_saves++;
 }
@@ -98,9 +98,9 @@ const bool world::is_free_cell(const vector2<game_type>& position) const
 // Very slow thing
 gameObject* world::get_game_object(const game_type& x, const game_type& y) const
 {
-    for (game_type i = 0; i < gameObjects.size(); ++i)
+    for (game_type i = 0; i < gameObjects.size(); ++i) {
         if (gameObjects[i].position.get_x() == x && gameObjects[i].position.get_y() == y) return &gameObjects[i];
-
+    }
     return nullptr;
 }
 

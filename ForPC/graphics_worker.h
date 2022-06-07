@@ -16,8 +16,9 @@
 static char buffer[world_size];
 
 static void buffer_init() {
-	for (game_type i = 0; i < world_size; ++i)
+	for (game_type i = 0; i < world_size; ++i) {
 		buffer[i] = '\n';
+	}
 }
 
 static void buffer_clear(const char& symbol = ' ') {
@@ -38,11 +39,14 @@ static void buffer_clear(const char& symbol = ' ') {
 	}
 }
 
-static void buffer_set_pixel(const int& x, const int& y, const char& symbol) {
-	if (x > world_size_x - 2) return;
-	game_type index = y * world_size_x + x;
-	if (index < 0 || index > world_size) return;
-	buffer[index] = symbol;
+static void buffer_set_pixel(const game_type& x, const game_type& y, const char& symbol) {
+	if (x < world_size_x - 2) {
+		game_type index = y * world_size_x + x;
+
+		if (index > -1 && index < world_size) {
+			buffer[index] = symbol;
+		}
+	}
 }
 
 static void buffer_set_pixel(vector2<game_type> position, const char& symbol) {
@@ -53,13 +57,14 @@ static void buffer_draw_gameObject(const gameObject& object) {
 	buffer_set_pixel(object.position.get_x(), object.position.get_y(), object.sprite);
 }
 
-static void buffer_draw_gameObjects(game_object_list& gameObjects) {
-	for (game_type i = 0; i < gameObjects.size(); ++i)
+static void buffer_draw_gameObjects(const game_object_list& gameObjects) {
+	for (game_type i = 0; i < gameObjects.size(); ++i) {
 		buffer_set_pixel(gameObjects[i].position, gameObjects[i].sprite);
+	}
 }
 
 
 static void print_buffer() {
-	printf(buffer);
+	printf("%s", &buffer);
 }
 #endif //GRAPHICS_MODE

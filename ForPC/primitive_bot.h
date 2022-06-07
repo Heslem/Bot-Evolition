@@ -18,6 +18,7 @@ public:
     primitive_bot(world& mainWorld);
     ~primitive_bot();
     primitive_bot(const primitive_bot& bot);
+    primitive_bot& operator=(const primitive_bot& bot);
 
     bool update() override;
     std::string get_save() const override;
