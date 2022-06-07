@@ -6,7 +6,7 @@
 struct gameObject
 {
 public:
-	virtual bool update(const bool buffer[]) = 0;
+	virtual bool update() = 0;
 	virtual std::string get_save() const = 0;
 public:
 #if GRAPHICS_MODE == true

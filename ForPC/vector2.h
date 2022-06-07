@@ -13,11 +13,13 @@ public:
 	vector2(const T& x, const T& y);
 	vector2(const vector2& vector);
 	
-	T get_x() const { return x; }
-	T get_y() const { return y; }
-	void set_position(const T& x, const T& y);
+	const T& get_x() const { return x; }
+	const T& get_y() const { return y; }
+
 	bool set_x(const T& x);
 	bool set_y(const T& y);
+
+	void set_position(const T& x, const T& y);
 
 	static const vector2 random(int maxX, int maxY) {
 		return vector2(1 + rand() % maxX, 1 + rand() % maxY);
@@ -37,7 +39,7 @@ public:
 };
 
 template<typename T>
-inline vector2<T>::vector2() : x(0), y(0)
+inline vector2<T>::vector2() : x(1), y(1)
 {
 	
 }
@@ -64,26 +66,31 @@ inline void vector2<T>::set_position(const T& x, const T& y)
 template<typename T>
 inline bool vector2<T>::set_x(const T& x)
 {
-	this->x = x;
 	if (x > world_size_x) {
-		this->x = world_size_x; return true;
+		this->x = world_size_x;
 	}
 	else if (x < 1) {
-		this->x = 1; return true;
+		this->x = 1; 
 	}
-
-	return false;
+	else {
+		this->x = x; 
+		return false;
+	}
+	return true;
 }
 
 template<typename T>
 inline bool vector2<T>::set_y(const T& y)
 {
-	this->y = y;
-	if (y > world_size_y) { 
-		this->y = world_size_y; return true; 
+	if (y > world_size_y) {
+		this->y = world_size_y; 
 	}
 	else if (y < 1) {
-		this->y = 1; return true;
+		this->y = 1; 
 	}
-	return false;
+	else {
+		this->y = y;
+		return false;
+	}
+	return true;
 }

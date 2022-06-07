@@ -40,7 +40,7 @@ primitive_bot::primitive_bot(const primitive_bot& bot) : food(FOOD_WHEN_START), 
 }
 #endif
 
-bool primitive_bot::update(const bool buffer[])
+bool primitive_bot::update()
 {
 	if (food <= 0) destroy();
 	else food--;
@@ -147,7 +147,7 @@ bool primitive_bot::update(const bool buffer[])
 
 		if (killBot &&
 			mainWorld.is_busy_cell(x, y)) {
-			auto object = mainWorld.get_game_object(x, y);
+			gameObject* object = mainWorld.get_game_object(x, y);
 			if (object != nullptr)
 			{
 				object->destroy();

@@ -19,7 +19,7 @@ public:
     ~primitive_bot();
     primitive_bot(const primitive_bot& bot);
 
-    bool update(const bool buffer[]) override;
+    bool update() override;
     std::string get_save() const override;
     void randomizeBrain();
     void evolition();

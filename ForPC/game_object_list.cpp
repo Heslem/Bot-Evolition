@@ -1,6 +1,8 @@
 #include "game_object_list.h"
 #include <iostream>
 
+#ifndef game_object_list_H
+#define game_object_list_H
 game_object_list::game_object_list() : pointer(0)
 {
 	for (game_type i = 0; i < world_size; ++i)
@@ -47,3 +49,4 @@ void game_object_list::move_left(const game_type& offset)
 	delete this->data[j];
 	this->data[j] = nullptr; 
 }
+#endif // game_object_list_H

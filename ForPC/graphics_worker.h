@@ -50,7 +50,7 @@ static void buffer_set_pixel(vector2<game_type> position, const char& symbol) {
 }
 
 static void buffer_draw_gameObject(const gameObject& object) {
-	buffer_set_pixel(object.position, object.sprite);
+	buffer_set_pixel(object.position.get_x(), object.position.get_y(), object.sprite);
 }
 
 static void buffer_draw_gameObjects(game_object_list& gameObjects) {

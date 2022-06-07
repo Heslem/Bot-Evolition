@@ -10,10 +10,10 @@ save::~save()
 {
 }
 
-void save::saveObjects(const game_object_list& objects, const std::string& saveName)
+void save::saveObjects(const game_object_list& objects, const char* saveName)
 {
 	std::ofstream outfile;
-	outfile.open(saveName.c_str(), std::ofstream::out | std::ofstream::trunc);
+	outfile.open(saveName, std::ofstream::out | std::ofstream::trunc);
 
 	for (game_type i = 0; i < objects.size(); ++i)
 	{
