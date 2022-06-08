@@ -2,7 +2,6 @@
 #include <vector>
 #include "graphics_mode.h"
 #include "gameObject.h"
-#include "game_object_list.h"
 #include "world_config.h"
 
 constexpr unsigned long long save_interval = 500;
@@ -25,10 +24,8 @@ struct world final
 
 	const game_type get_index(const game_type& x, const game_type& y) const;
 
-	const bool is_full() const { return gameObjects.is_full(); };
-
 #if GRAPHICS_MODE
-	game_object_list gameObjects;
+	std::vector<gameObject*> gameObjects;
 #endif
 
 private:

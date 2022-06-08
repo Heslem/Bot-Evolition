@@ -1,0 +1,2256 @@
+bot: 
+x: 1
+y: 1
+food: 1002
+brain: 7476667743517577
+end.
+bot: 
+x: 2
+y: 1
+food: 1014
+brain: 7476667743517577
+end.
+bot: 
+x: 1
+y: 1
+food: 1011
+brain: 7476667743517577
+end.
+bot: 
+x: 1
+y: 4
+food: 1002
+brain: 7476667743517577
+end.
+bot: 
+x: 1
+y: 1
+food: 1013
+brain: 7476667743517577
+end.
+bot: 
+x: 2
+y: 1
+food: 1007
+brain: 7476667743517577
+end.
+bot: 
+x: 2
+y: 4
+food: 296
+brain: 7476667743517577
+end.
+bot: 
+x: 1
+y: 2
+food: 1018
+brain: 7476667743517577
+end.
+bot: 
+x: 6
+y: 1
+food: 2237
+brain: 7476667763517577
+end.
+bot: 
+x: 35
+y: 31
+food: 31
+brain: 7276653743517577
+end.
+bot: 
+x: 2
+y: 5
+food: 168
+brain: 7476667743517577
+end.
+bot: 
+x: 36
+y: 1
+food: 1000
+brain: 7246342742517577
+end.
+bot: 
+x: 18
+y: 31
+food: 300
+brain: 7276762363517577
+end.
+bot: 
+x: 1
+y: 31
+food: 145
+brain: 7236662773517177
+end.
+bot: 
+x: 32
+y: 1
+food: 781
+brain: 7246342742517577
+end.
+bot: 
+x: 43
+y: 1
+food: 587
+brain: 7246342742517577
+end.
+bot: 
+x: 2
+y: 1
+food: 1006
+brain: 7476667743517577
+end.
+bot: 
+x: 2
+y: 3
+food: 632
+brain: 7476667743517577
+end.
+bot: 
+x: 26
+y: 1
+food: 406
+brain: 7246342742517577
+end.
+bot: 
+x: 48
+y: 1
+food: 926
+brain: 7246342742517577
+end.
+bot: 
+x: 36
+y: 1
+food: 1006
+brain: 7246342742517577
+end.
+bot: 
+x: 31
+y: 1
+food: 999
+brain: 7246342742517577
+end.
+bot: 
+x: 1
+y: 5
+food: 1016
+brain: 7476667743517577
+end.
+bot: 
+x: 41
+y: 1
+food: 879
+brain: 7246342742517577
+end.
+bot: 
+x: 1
+y: 13
+food: 483
+brain: 7216662743516177
+end.
+bot: 
+x: 4
+y: 1
+food: 1891
+brain: 7471667763517577
+end.
+bot: 
+x: 36
+y: 1
+food: 1369
+brain: 7246342742517577
+end.
+bot: 
+x: 2
+y: 3
+food: 1017
+brain: 7476667743517577
+end.
+bot: 
+x: 34
+y: 1
+food: 1363
+brain: 7246342742517577
+end.
+bot: 
+x: 1
+y: 2
+food: 1009
+brain: 7476667743517577
+end.
+bot: 
+x: 23
+y: 1
+food: 234
+brain: 7246342742517577
+end.
+bot: 
+x: 5
+y: 1
+food: 1532
+brain: 7476667763517577
+end.
+bot: 
+x: 39
+y: 1
+food: 619
+brain: 7246342742517577
+end.
+bot: 
+x: 25
+y: 1
+food: 1307
+brain: 7246342742517577
+end.
+bot: 
+x: 21
+y: 31
+food: 131
+brain: 7277362743516577
+end.
+bot: 
+x: 48
+y: 15
+food: 135
+brain: 5226463743517577
+end.
+bot: 
+x: 21
+y: 28
+food: 164
+brain: 7276662743517537
+end.
+bot: 
+x: 2
+y: 3
+food: 1002
+brain: 7476667743517577
+end.
+bot: 
+x: 40
+y: 1
+food: 1001
+brain: 7246342742517577
+end.
+bot: 
+x: 30
+y: 1
+food: 1008
+brain: 7246342742517577
+end.
+bot: 
+x: 42
+y: 11
+food: 60
+brain: 7276662743517577
+end.
+bot: 
+x: 43
+y: 1
+food: 723
+brain: 7246342742517577
+end.
+bot: 
+x: 31
+y: 1
+food: 1001
+brain: 7246342742517577
+end.
+bot: 
+x: 38
+y: 1
+food: 1006
+brain: 7246342742517577
+end.
+bot: 
+x: 36
+y: 1
+food: 1009
+brain: 7246342742517577
+end.
+bot: 
+x: 29
+y: 1
+food: 1010
+brain: 7246342742517577
+end.
+bot: 
+x: 19
+y: 14
+food: 176
+brain: 7276362743516577
+end.
+bot: 
+x: 32
+y: 1
+food: 1012
+brain: 7246342742517577
+end.
+bot: 
+x: 1
+y: 1
+food: 1013
+brain: 7476667743517577
+end.
+bot: 
+x: 48
+y: 1
+food: 615
+brain: 7246342742517577
+end.
+bot: 
+x: 1
+y: 2
+food: 1019
+brain: 7476667743517577
+end.
+bot: 
+x: 27
+y: 31
+food: 479
+brain: 7276662763517377
+end.
+bot: 
+x: 2
+y: 25
+food: 187
+brain: 7236662743517516
+end.
+bot: 
+x: 27
+y: 23
+food: 186
+brain: 7276662743517377
+end.
+bot: 
+x: 48
+y: 26
+food: 188
+brain: 7276652763517377
+end.
+bot: 
+x: 1
+y: 31
+food: 990
+brain: 7576662733517577
+end.
+bot: 
+x: 2
+y: 4
+food: 1014
+brain: 7476667743517577
+end.
+bot: 
+x: 29
+y: 27
+food: 98
+brain: 7276662763517377
+end.
+bot: 
+x: 41
+y: 1
+food: 1001
+brain: 7246342742517577
+end.
+bot: 
+x: 45
+y: 1
+food: 999
+brain: 7246342772517577
+end.
+bot: 
+x: 40
+y: 1
+food: 1000
+brain: 7246342742517577
+end.
+bot: 
+x: 30
+y: 1
+food: 1244
+brain: 7246342742517577
+end.
+bot: 
+x: 2
+y: 2
+food: 1005
+brain: 7476667743517577
+end.
+bot: 
+x: 21
+y: 31
+food: 103
+brain: 7276362773517577
+end.
+bot: 
+x: 10
+y: 27
+food: 112
+brain: 7276362773517577
+end.
+bot: 
+x: 45
+y: 1
+food: 675
+brain: 7246342742517577
+end.
+bot: 
+x: 1
+y: 10
+food: 1816
+brain: 7576362743517577
+end.
+bot: 
+x: 29
+y: 26
+food: 115
+brain: 7276662762517377
+end.
+bot: 
+x: 29
+y: 12
+food: 305
+brain: 7266666743517577
+end.
+bot: 
+x: 14
+y: 26
+food: 222
+brain: 7256662743517537
+end.
+bot: 
+x: 33
+y: 28
+food: 23
+brain: 7276662763517377
+end.
+bot: 
+x: 47
+y: 27
+food: 122
+brain: 7277662763517377
+end.
+bot: 
+x: 25
+y: 1
+food: 1004
+brain: 7246342742517577
+end.
+bot: 
+x: 46
+y: 1
+food: 1007
+brain: 7246342742517577
+end.
+bot: 
+x: 1
+y: 7
+food: 1011
+brain: 7476667743517577
+end.
+bot: 
+x: 29
+y: 31
+food: 235
+brain: 7276662763517377
+end.
+bot: 
+x: 32
+y: 27
+food: 131
+brain: 7276662763517377
+end.
+bot: 
+x: 45
+y: 27
+food: 232
+brain: 7277662763517377
+end.
+bot: 
+x: 43
+y: 1
+food: 1014
+brain: 7246342772517577
+end.
+bot: 
+x: 9
+y: 31
+food: 133
+brain: 7276762363517577
+end.
+bot: 
+x: 34
+y: 1
+food: 614
+brain: 7246342742517577
+end.
+bot: 
+x: 11
+y: 23
+food: 139
+brain: 7256662743517537
+end.
+bot: 
+x: 25
+y: 30
+food: 242
+brain: 7276662763517377
+end.
+bot: 
+x: 33
+y: 27
+food: 242
+brain: 7276662763517377
+end.
+bot: 
+x: 32
+y: 32
+food: 143
+brain: 7276662763517377
+end.
+bot: 
+x: 28
+y: 25
+food: 247
+brain: 7276662762517377
+end.
+bot: 
+x: 19
+y: 12
+food: 51
+brain: 7256662543517577
+end.
+bot: 
+x: 21
+y: 1
+food: 429
+brain: 7246342742517577
+end.
+bot: 
+x: 30
+y: 25
+food: 255
+brain: 7276662763517377
+end.
+bot: 
+x: 39
+y: 22
+food: 314
+brain: 7276662743317277
+end.
+bot: 
+x: 35
+y: 1
+food: 1115
+brain: 7246342742517577
+end.
+bot: 
+x: 26
+y: 1
+food: 1402
+brain: 7246342742517577
+end.
+bot: 
+x: 2
+y: 13
+food: 262
+brain: 7276662743517177
+end.
+bot: 
+x: 8
+y: 22
+food: 260
+brain: 7256662743517537
+end.
+bot: 
+x: 37
+y: 1
+food: 1000
+brain: 7246342742517577
+end.
+bot: 
+x: 32
+y: 12
+food: 63
+brain: 7276662743517577
+end.
+bot: 
+x: 31
+y: 30
+food: 265
+brain: 7276662763517377
+end.
+bot: 
+x: 47
+y: 1
+food: 946
+brain: 7246342742517577
+end.
+bot: 
+x: 4
+y: 29
+food: 273
+brain: 7276362773517577
+end.
+bot: 
+x: 48
+y: 6
+food: 251
+brain: 5226463743517577
+end.
+bot: 
+x: 40
+y: 13
+food: 275
+brain: 7276662743517577
+end.
+bot: 
+x: 15
+y: 2
+food: 39
+brain: 7256462743517577
+end.
+bot: 
+x: 19
+y: 31
+food: 277
+brain: 7276362773517577
+end.
+bot: 
+x: 14
+y: 19
+food: 340
+brain: 7276162743517537
+end.
+bot: 
+x: 22
+y: 3
+food: 222
+brain: 7276666743517577
+end.
+bot: 
+x: 31
+y: 5
+food: 220
+brain: 7276662763517577
+end.
+bot: 
+x: 27
+y: 28
+food: 284
+brain: 7276662763517377
+end.
+bot: 
+x: 5
+y: 31
+food: 180
+brain: 7276762363517577
+end.
+bot: 
+x: 5
+y: 1
+food: 1003
+brain: 7476667763517577
+end.
+bot: 
+x: 20
+y: 12
+food: 284
+brain: 7256662743517577
+end.
+bot: 
+x: 27
+y: 1
+food: 1005
+brain: 7246342742517577
+end.
+bot: 
+x: 15
+y: 20
+food: 91
+brain: 7256162743517537
+end.
+bot: 
+x: 31
+y: 1
+food: 850
+brain: 7246342742517577
+end.
+bot: 
+x: 2
+y: 15
+food: 292
+brain: 7276662743517177
+end.
+bot: 
+x: 4
+y: 13
+food: 293
+brain: 7256662743517177
+end.
+bot: 
+x: 7
+y: 29
+food: 292
+brain: 7276362773517577
+end.
+bot: 
+x: 40
+y: 20
+food: 392
+brain: 1226463643517577
+end.
+bot: 
+x: 35
+y: 13
+food: 297
+brain: 1226463743517577
+end.
+bot: 
+x: 44
+y: 8
+food: 498
+brain: 1226463743517572
+end.
+bot: 
+x: 14
+y: 23
+food: 100
+brain: 7276162743517537
+end.
+bot: 
+x: 2
+y: 2
+food: 1001
+brain: 7476667743517577
+end.
+bot: 
+x: 47
+y: 9
+food: 41
+brain: 5226463743517577
+end.
+bot: 
+x: 15
+y: 18
+food: 206
+brain: 7276162743517537
+end.
+bot: 
+x: 9
+y: 29
+food: 303
+brain: 7276362773517577
+end.
+bot: 
+x: 41
+y: 30
+food: 204
+brain: 7226662743314517
+end.
+bot: 
+x: 14
+y: 9
+food: 346
+brain: 7276362743517677
+end.
+bot: 
+x: 39
+y: 6
+food: 1187
+brain: 1226463743717572
+end.
+bot: 
+x: 41
+y: 1
+food: 768
+brain: 7246342742517577
+end.
+bot: 
+x: 24
+y: 1
+food: 1007
+brain: 7246342742517577
+end.
+bot: 
+x: 20
+y: 14
+food: 308
+brain: 7256662743517577
+end.
+bot: 
+x: 26
+y: 30
+food: 710
+brain: 7276662763517377
+end.
+bot: 
+x: 40
+y: 1
+food: 737
+brain: 7246342742517577
+end.
+bot: 
+x: 3
+y: 1
+food: 1691
+brain: 7471667763517577
+end.
+bot: 
+x: 38
+y: 1
+food: 754
+brain: 7246342742517577
+end.
+bot: 
+x: 20
+y: 13
+food: 173
+brain: 7256662773517577
+end.
+bot: 
+x: 26
+y: 3
+food: 374
+brain: 1126463743517577
+end.
+bot: 
+x: 1
+y: 12
+food: 2316
+brain: 6276662743517177
+end.
+bot: 
+x: 38
+y: 28
+food: 321
+brain: 7226664743314517
+end.
+bot: 
+x: 1
+y: 5
+food: 919
+brain: 7476667743517577
+end.
+bot: 
+x: 48
+y: 11
+food: 299
+brain: 5226463743517577
+end.
+bot: 
+x: 35
+y: 21
+food: 321
+brain: 1226463643517577
+end.
+bot: 
+x: 12
+y: 16
+food: 323
+brain: 7276262743517537
+end.
+bot: 
+x: 2
+y: 3
+food: 902
+brain: 7476667743517577
+end.
+bot: 
+x: 28
+y: 1
+food: 842
+brain: 7246342772517577
+end.
+bot: 
+x: 44
+y: 1
+food: 722
+brain: 7246342742517577
+end.
+bot: 
+x: 17
+y: 13
+food: 125
+brain: 7276162743517537
+end.
+bot: 
+x: 25
+y: 5
+food: 425
+brain: 7276662763517577
+end.
+bot: 
+x: 24
+y: 4
+food: 386
+brain: 7276666743517577
+end.
+bot: 
+x: 46
+y: 1
+food: 687
+brain: 7246342742517577
+end.
+bot: 
+x: 2
+y: 30
+food: 326
+brain: 7276362773517577
+end.
+bot: 
+x: 30
+y: 28
+food: 233
+brain: 7276662763517377
+end.
+bot: 
+x: 37
+y: 21
+food: 232
+brain: 1226463643517577
+end.
+bot: 
+x: 39
+y: 20
+food: 230
+brain: 1226463643517577
+end.
+bot: 
+x: 40
+y: 11
+food: 330
+brain: 7276662743517277
+end.
+bot: 
+x: 4
+y: 9
+food: 475
+brain: 7276662743517177
+end.
+bot: 
+x: 23
+y: 3
+food: 516
+brain: 1126463743517577
+end.
+bot: 
+x: 29
+y: 1
+food: 676
+brain: 7246342742517577
+end.
+bot: 
+x: 2
+y: 27
+food: 335
+brain: 7276362773517577
+end.
+bot: 
+x: 9
+y: 3
+food: 536
+brain: 7256462143517577
+end.
+bot: 
+x: 19
+y: 7
+food: 317
+brain: 7276666743517577
+end.
+bot: 
+x: 24
+y: 13
+food: 236
+brain: 7276662743517577
+end.
+bot: 
+x: 9
+y: 4
+food: 1377
+brain: 7276362743557577
+end.
+bot: 
+x: 3
+y: 30
+food: 237
+brain: 7276362773517577
+end.
+bot: 
+x: 38
+y: 10
+food: 237
+brain: 1226463743517577
+end.
+bot: 
+x: 26
+y: 7
+food: 157
+brain: 7276662743517577
+end.
+bot: 
+x: 44
+y: 4
+food: 100
+brain: 5226463743517577
+end.
+bot: 
+x: 12
+y: 6
+food: 640
+brain: 7276362743517577
+end.
+bot: 
+x: 48
+y: 8
+food: 502
+brain: 5226463743517577
+end.
+bot: 
+x: 16
+y: 10
+food: 283
+brain: 7256662743517577
+end.
+bot: 
+x: 16
+y: 14
+food: 44
+brain: 7276162743517537
+end.
+bot: 
+x: 41
+y: 10
+food: 344
+brain: 7276662743517277
+end.
+bot: 
+x: 33
+y: 1
+food: 623
+brain: 7246342742517577
+end.
+bot: 
+x: 30
+y: 1
+food: 1006
+brain: 7246342742517577
+end.
+bot: 
+x: 42
+y: 1
+food: 624
+brain: 7246342742517577
+end.
+bot: 
+x: 9
+y: 8
+food: 285
+brain: 7276362743517577
+end.
+bot: 
+x: 32
+y: 9
+food: 346
+brain: 1226463743517577
+end.
+bot: 
+x: 19
+y: 19
+food: 346
+brain: 7256662733517577
+end.
+bot: 
+x: 39
+y: 8
+food: 325
+brain: 1226463743517574
+end.
+bot: 
+x: 34
+y: 14
+food: 246
+brain: 7256662243517577
+end.
+bot: 
+x: 13
+y: 23
+food: 346
+brain: 7276162743517537
+end.
+bot: 
+x: 13
+y: 21
+food: 352
+brain: 7256162743517537
+end.
+bot: 
+x: 12
+y: 10
+food: 411
+brain: 7276362743517677
+end.
+bot: 
+x: 28
+y: 27
+food: 350
+brain: 7276662763517377
+end.
+bot: 
+x: 1
+y: 9
+food: 250
+brain: 7276661743517177
+end.
+bot: 
+x: 41
+y: 6
+food: 390
+brain: 5216463743517577
+end.
+bot: 
+x: 37
+y: 4
+food: 471
+brain: 1226463743517577
+end.
+bot: 
+x: 39
+y: 9
+food: 231
+brain: 7276662743517277
+end.
+bot: 
+x: 37
+y: 19
+food: 350
+brain: 1226463643517577
+end.
+bot: 
+x: 44
+y: 5
+food: 455
+brain: 5226463743517577
+end.
+bot: 
+x: 17
+y: 16
+food: 154
+brain: 7276162743517537
+end.
+bot: 
+x: 14
+y: 31
+food: 153
+brain: 7276362773513577
+end.
+bot: 
+x: 1
+y: 7
+food: 694
+brain: 7476667743517577
+end.
+bot: 
+x: 27
+y: 9
+food: 155
+brain: 1126463743517577
+end.
+bot: 
+x: 12
+y: 2
+food: 334
+brain: 7256462743517577
+end.
+bot: 
+x: 19
+y: 3
+food: 216
+brain: 7276666743517577
+end.
+bot: 
+x: 5
+y: 27
+food: 258
+brain: 7276362773517577
+end.
+bot: 
+x: 38
+y: 6
+food: 1020
+brain: 1226463743517574
+end.
+bot: 
+x: 1
+y: 30
+food: 762
+brain: 7276362773517577
+end.
+bot: 
+x: 35
+y: 4
+food: 440
+brain: 1226463743517577
+end.
+bot: 
+x: 20
+y: 11
+food: 259
+brain: 7276662743517577
+end.
+bot: 
+x: 4
+y: 31
+food: 360
+brain: 7276762363517577
+end.
+bot: 
+x: 5
+y: 5
+food: 961
+brain: 7276662743517177
+end.
+bot: 
+x: 33
+y: 7
+food: 100
+brain: 7276662743517277
+end.
+bot: 
+x: 5
+y: 7
+food: 100
+brain: 7276662743517177
+end.
+bot: 
+x: 21
+y: 9
+food: 544
+brain: 7276162743517575
+end.
+bot: 
+x: 25
+y: 9
+food: 44
+brain: 7276662743517577
+end.
+bot: 
+x: 36
+y: 21
+food: 262
+brain: 1226463643517577
+end.
+bot: 
+x: 4
+y: 12
+food: 262
+brain: 7276662743516177
+end.
+bot: 
+x: 14
+y: 15
+food: 263
+brain: 7276162743517537
+end.
+bot: 
+x: 22
+y: 9
+food: 1046
+brain: 1126463743517577
+end.
+bot: 
+x: 10
+y: 2
+food: 403
+brain: 7256462743517577
+end.
+bot: 
+x: 15
+y: 5
+food: 26
+brain: 7276362743517577
+end.
+bot: 
+x: 42
+y: 7
+food: 306
+brain: 1226463743517572
+end.
+bot: 
+x: 28
+y: 11
+food: 364
+brain: 7226662743517577
+end.
+bot: 
+x: 32
+y: 8
+food: 26
+brain: 7276762743517577
+end.
+bot: 
+x: 30
+y: 9
+food: 807
+brain: 1226463743517577
+end.
+bot: 
+x: 2
+y: 7
+food: 486
+brain: 7275162743515577
+end.
+bot: 
+x: 3
+y: 8
+food: 910
+brain: 7276661743517177
+end.
+bot: 
+x: 23
+y: 7
+food: 367
+brain: 7256662743517577
+end.
+bot: 
+x: 6
+y: 27
+food: 768
+brain: 7276362773517577
+end.
+bot: 
+x: 23
+y: 2
+food: 888
+brain: 1126463743517577
+end.
+bot: 
+x: 35
+y: 8
+food: 308
+brain: 1226463743517577
+end.
+bot: 
+x: 34
+y: 4
+food: 489
+brain: 1226463743517577
+end.
+bot: 
+x: 18
+y: 11
+food: 368
+brain: 7276662743517577
+end.
+bot: 
+x: 43
+y: 9
+food: 770
+brain: 1226363743517572
+end.
+bot: 
+x: 11
+y: 4
+food: 511
+brain: 7276362743517577
+end.
+bot: 
+x: 8
+y: 6
+food: 870
+brain: 7276362743517577
+end.
+bot: 
+x: 34
+y: 21
+food: 370
+brain: 1226463643517577
+end.
+bot: 
+x: 22
+y: 1
+food: 911
+brain: 7246342742517577
+end.
+bot: 
+x: 25
+y: 7
+food: 593
+brain: 7276662743517577
+end.
+bot: 
+x: 20
+y: 10
+food: 436
+brain: 7276662743517577
+end.
+bot: 
+x: 7
+y: 31
+food: 373
+brain: 7276362773517577
+end.
+bot: 
+x: 30
+y: 6
+food: 493
+brain: 1226463743517574
+end.
+bot: 
+x: 45
+y: 9
+food: 493
+brain: 5226463743517577
+end.
+bot: 
+x: 6
+y: 10
+food: 273
+brain: 7276662743516177
+end.
+bot: 
+x: 8
+y: 10
+food: 373
+brain: 7276362743517577
+end.
+bot: 
+x: 13
+y: 31
+food: 273
+brain: 7276362773513577
+end.
+bot: 
+x: 31
+y: 4
+food: 376
+brain: 1226463743517577
+end.
+bot: 
+x: 40
+y: 4
+food: 475
+brain: 5226463743517577
+end.
+bot: 
+x: 24
+y: 11
+food: 417
+brain: 7256662743517577
+end.
+bot: 
+x: 21
+y: 11
+food: 376
+brain: 7276662743517577
+end.
+bot: 
+x: 38
+y: 8
+food: 377
+brain: 1226463743517572
+end.
+bot: 
+x: 26
+y: 10
+food: 455
+brain: 1226463743517577
+end.
+bot: 
+x: 1
+y: 7
+food: 556
+brain: 7476667743517577
+end.
+bot: 
+x: 29
+y: 5
+food: 458
+brain: 1226463753517577
+end.
+bot: 
+x: 42
+y: 6
+food: 457
+brain: 5226463743517577
+end.
+bot: 
+x: 21
+y: 6
+food: 417
+brain: 7256662743517577
+end.
+bot: 
+x: 29
+y: 5
+food: 77
+brain: 7276662763517577
+end.
+bot: 
+x: 45
+y: 11
+food: 277
+brain: 5226463743517577
+end.
+bot: 
+x: 16
+y: 4
+food: 497
+brain: 7256462743517577
+end.
+bot: 
+x: 29
+y: 13
+food: 277
+brain: 3276662743517577
+end.
+bot: 
+x: 17
+y: 3
+food: 38
+brain: 7276666743517577
+end.
+bot: 
+x: 34
+y: 8
+food: 257
+brain: 1226463743517577
+end.
+bot: 
+x: 14
+y: 11
+food: 379
+brain: 7256662743517577
+end.
+bot: 
+x: 15
+y: 8
+food: 438
+brain: 7276162743517573
+end.
+bot: 
+x: 5
+y: 6
+food: 698
+brain: 7276362743517577
+end.
+bot: 
+x: 44
+y: 9
+food: 359
+brain: 5226463743517577
+end.
+bot: 
+x: 25
+y: 1
+food: 482
+brain: 7246342742517577
+end.
+bot: 
+x: 46
+y: 4
+food: 1240
+brain: 5226463743517577
+end.
+bot: 
+x: 18
+y: 8
+food: 300
+brain: 7276162743517575
+end.
+bot: 
+x: 17
+y: 6
+food: 540
+brain: 7276666743517577
+end.
+bot: 
+x: 4
+y: 3
+food: 420
+brain: 7276362743517577
+end.
+bot: 
+x: 20
+y: 4
+food: 1180
+brain: 7256462743517577
+end.
+bot: 
+x: 20
+y: 2
+food: 800
+brain: 7256462743517577
+end.
+bot: 
+x: 2
+y: 9
+food: 880
+brain: 7276662743517177
+end.
+bot: 
+x: 36
+y: 10
+food: 282
+brain: 1226463743517577
+end.
+bot: 
+x: 26
+y: 10
+food: 381
+brain: 7276662743517577
+end.
+bot: 
+x: 47
+y: 6
+food: 424
+brain: 5226463243517577
+end.
+bot: 
+x: 23
+y: 4
+food: 522
+brain: 7276666743517577
+end.
+bot: 
+x: 30
+y: 6
+food: 423
+brain: 7276662743517277
+end.
+bot: 
+x: 10
+y: 10
+food: 362
+brain: 7276362743517377
+end.
+bot: 
+x: 23
+y: 8
+food: 1222
+brain: 1126463743517577
+end.
+bot: 
+x: 2
+y: 12
+food: 384
+brain: 7276662743516177
+end.
+bot: 
+x: 19
+y: 6
+food: 883
+brain: 7256462743517277
+end.
+bot: 
+x: 1
+y: 3
+food: 524
+brain: 7476667743517577
+end.
+bot: 
+x: 6
+y: 11
+food: 385
+brain: 7276662743516177
+end.
+bot: 
+x: 23
+y: 13
+food: 384
+brain: 7276662743517577
+end.
+bot: 
+x: 9
+y: 6
+food: 524
+brain: 7276362743517577
+end.
+bot: 
+x: 3
+y: 10
+food: 846
+brain: 7276661743517177
+end.
+bot: 
+x: 15
+y: 4
+food: 384
+brain: 7256462743517577
+end.
+bot: 
+x: 34
+y: 6
+food: 824
+brain: 1226463743517574
+end.
+bot: 
+x: 15
+y: 6
+food: 424
+brain: 7276362743517577
+end.
+bot: 
+x: 2
+y: 8
+food: 404
+brain: 7275162743515577
+end.
+bot: 
+x: 25
+y: 8
+food: 1605
+brain: 1726463743517577
+end.
+bot: 
+x: 40
+y: 6
+food: 445
+brain: 5216463743517577
+end.
+bot: 
+x: 11
+y: 31
+food: 285
+brain: 7276362773517577
+end.
+bot: 
+x: 8
+y: 2
+food: 485
+brain: 7256462743517577
+end.
+bot: 
+x: 37
+y: 8
+food: 345
+brain: 1226463743517572
+end.
+bot: 
+x: 29
+y: 8
+food: 505
+brain: 7276662743517577
+end.
+bot: 
+x: 38
+y: 9
+food: 505
+brain: 7276762743527677
+end.
+bot: 
+x: 21
+y: 10
+food: 306
+brain: 1126463743517577
+end.
+bot: 
+x: 4
+y: 10
+food: 786
+brain: 7276661743517177
+end.
+bot: 
+x: 9
+y: 11
+food: 386
+brain: 7271362743517677
+end.
+bot: 
+x: 29
+y: 15
+food: 286
+brain: 3276662743517577
+end.
+bot: 
+x: 30
+y: 8
+food: 446
+brain: 1226463743557577
+end.
+bot: 
+x: 1
+y: 5
+food: 487
+brain: 7476667743517577
+end.
+bot: 
+x: 1
+y: 6
+food: 487
+brain: 7476667743517577
+end.
+bot: 
+x: 36
+y: 8
+food: 428
+brain: 1226463743517574
+end.
+bot: 
+x: 3
+y: 7
+food: 468
+brain: 7276362743517577
+end.
+bot: 
+x: 19
+y: 5
+food: 407
+brain: 7276662763517577
+end.
+bot: 
+x: 14
+y: 16
+food: 388
+brain: 7276162743517537
+end.
+bot: 
+x: 26
+y: 9
+food: 828
+brain: 1126463743517577
+end.
+bot: 
+x: 20
+y: 7
+food: 448
+brain: 7256662743517577
+end.
+bot: 
+x: 42
+y: 10
+food: 408
+brain: 5226463743517577
+end.
+bot: 
+x: 7
+y: 4
+food: 388
+brain: 7276362743517577
+end.
+bot: 
+x: 34
+y: 7
+food: 429
+brain: 1226463743517577
+end.
+bot: 
+x: 21
+y: 5
+food: 389
+brain: 7276662763517577
+end.
+bot: 
+x: 17
+y: 9
+food: 749
+brain: 7276162743517575
+end.
+bot: 
+x: 18
+y: 4
+food: 349
+brain: 7256462743517577
+end.
+bot: 
+x: 13
+y: 13
+food: 290
+brain: 7276162743517537
+end.
+bot: 
+x: 48
+y: 8
+food: 710
+brain: 5226463743517577
+end.
+bot: 
+x: 35
+y: 10
+food: 691
+brain: 1226463743517577
+end.
+bot: 
+x: 36
+y: 6
+food: 691
+brain: 1226463743517574
+end.
+bot: 
+x: 3
+y: 9
+food: 851
+brain: 7276661743517177
+end.
+bot: 
+x: 17
+y: 8
+food: 451
+brain: 7276162743517575
+end.
+bot: 
+x: 47
+y: 7
+food: 391
+brain: 5226463243517577
+end.
+bot: 
+x: 23
+y: 8
+food: 351
+brain: 7276662743517577
+end.
+bot: 
+x: 24
+y: 7
+food: 451
+brain: 7276662743517577
+end.
+bot: 
+x: 27
+y: 6
+food: 351
+brain: 7276662743517277
+end.
+bot: 
+x: 8
+y: 9
+food: 731
+brain: 7276362743517377
+end.
+bot: 
+x: 42
+y: 9
+food: 412
+brain: 1226363743517572
+end.
+bot: 
+x: 23
+y: 5
+food: 352
+brain: 7276662763517577
+end.
+bot: 
+x: 3
+y: 27
+food: 393
+brain: 7276362773517577
+end.
+bot: 
+x: 3
+y: 6
+food: 453
+brain: 7276662743517177
+end.
+bot: 
+x: 19
+y: 8
+food: 833
+brain: 7256662743517577
+end.
+bot: 
+x: 16
+y: 5
+food: 833
+brain: 7256462743517577
+end.
+bot: 
+x: 11
+y: 8
+food: 1233
+brain: 7276362743517377
+end.
+bot: 
+x: 13
+y: 3
+food: 433
+brain: 7256462743517577
+end.
+bot: 
+x: 13
+y: 5
+food: 853
+brain: 7276362743517577
+end.
+bot: 
+x: 13
+y: 12
+food: 393
+brain: 7276162743517537
+end.
+bot: 
+x: 33
+y: 14
+food: 394
+brain: 7256662243317577
+end.
+bot: 
+x: 31
+y: 7
+food: 454
+brain: 7276662743517277
+end.
+bot: 
+x: 4
+y: 10
+food: 394
+brain: 7276662743516177
+end.
+bot: 
+x: 9
+y: 31
+food: 394
+brain: 7276362773517577
+end.
+bot: 
+x: 36
+y: 8
+food: 414
+brain: 1226463743517572
+end.
+bot: 
+x: 10
+y: 6
+food: 435
+brain: 7276362743517577
+end.
+bot: 
+x: 3
+y: 5
+food: 435
+brain: 7276662743517177
+end.
+bot: 
+x: 20
+y: 9
+food: 1235
+brain: 7276162743517575
+end.
+bot: 
+x: 11
+y: 31
+food: 395
+brain: 7276362773513577
+end.
+bot: 
+x: 21
+y: 8
+food: 795
+brain: 1126463743517577
+end.
+bot: 
+x: 22
+y: 10
+food: 795
+brain: 1126463743517577
+end.
+bot: 
+x: 28
+y: 15
+food: 795
+brain: 3276662743517577
+end.
+bot: 
+x: 18
+y: 5
+food: 835
+brain: 7276662763517577
+end.
+bot: 
+x: 25
+y: 3
+food: 397
+brain: 1126463743517577
+end.
+bot: 
+x: 40
+y: 6
+food: 397
+brain: 5213463743517577
+end.
+bot: 
+x: 9
+y: 2
+food: 417
+brain: 7256462743517577
+end.
+bot: 
+x: 30
+y: 4
+food: 397
+brain: 1226463743517577
+end.
+bot: 
+x: 28
+y: 5
+food: 437
+brain: 7276662763517577
+end.
+bot: 
+x: 33
+y: 8
+food: 397
+brain: 1226463743517577
+end.
+bot: 
+x: 6
+y: 4
+food: 437
+brain: 7276362743517577
+end.
+bot: 
+x: 20
+y: 5
+food: 437
+brain: 7276662763517577
+end.
+bot: 
+x: 16
+y: 13
+food: 398
+brain: 7276162743517537
+end.
+bot: 
+x: 13
+y: 31
+food: 398
+brain: 7276362773513577
+end.
+bot: 
+x: 24
+y: 9
+food: 418
+brain: 7276662743517577
+end.
+bot: 
+x: 14
+y: 5
+food: 418
+brain: 7276362743517577
+end.
+bot: 
+x: 41
+y: 7
+food: 398
+brain: 1226463743517572
+end.
+bot: 
+x: 4
+y: 6
+food: 418
+brain: 7276362743517577
+end.
+bot: 
+x: 16
+y: 9
+food: 418
+brain: 7276162743517575
+end.
+bot: 
+x: 17
+y: 4
+food: 418
+brain: 7253462743517577
+end.
+bot: 
+x: 44
+y: 11
+food: 399
+brain: 5226463743517577
+end.
+bot: 
+x: 12
+y: 13
+food: 399
+brain: 7276162743517537
+end.
+bot: 
+x: 47
+y: 8
+food: 399
+brain: 5226463743517577
+end.
+bot: 
+x: 14
+y: 2
+food: 400
+brain: 7256462743517577
+end.
+bot: 
+x: 26
+y: 9
+food: 400
+brain: 1166463743517577
+end.
+bot: 
+x: 31
+y: 8
+food: 400
+brain: 7276762743517577
+end.
+bot: 
+x: 16
+y: 3
+food: 400
+brain: 7276666743517577
+end.
+bot: 
+x: 14
+y: 8
+food: 400
+brain: 7276162743517513
+end.
+bot: 
+x: 17
+y: 8
+food: 400
+brain: 7276162743517575
+end.
+bot: 
+x: 3
+y: 3
+food: 400
+brain: 7276362743317577
+end.
+bot: 
+x: 1
+y: 8
+food: 400
+brain: 7275162743515577
+end.
+bot: 
+x: 34
+y: 10
+food: 400
+brain: 1226463743517577
+end.
+bot: 
+x: 35
+y: 6
+food: 400
+brain: 1226463743517574
+end.
+bot: 
+x: 22
+y: 8
+food: 400
+brain: 7276662743517577
+end.
+bot: 
+x: 26
+y: 6
+food: 400
+brain: 7276662743517277
+end.
+bot: 
+x: 7
+y: 9
+food: 400
+brain: 7276362743517377
+end.
+bot: 
+x: 22
+y: 5
+food: 400
+brain: 7274662763517577
+end.

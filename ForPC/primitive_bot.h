@@ -4,12 +4,13 @@
 
 typedef unsigned char type_brain;
 
-constexpr type_brain BRAIN_SIZE = 12;
-constexpr type_brain MAX_COMMAND = 6;
+constexpr type_brain BRAIN_SIZE = 16;
+constexpr type_brain MAX_COMMAND = 7;
 
-constexpr unsigned short CHANGE_EVOLITION = 10;
-constexpr unsigned short FOOD_WHEN_START = 400;
-constexpr unsigned short D_CHANGE_EVOLITION = CHANGE_EVOLITION / 2;
+constexpr game_type MAX_AGE_STEPS = 2000;
+constexpr game_type CHANGE_EVOLITION = 10;
+constexpr game_type FOOD_WHEN_START = 400;
+constexpr game_type D_CHANGE_EVOLITION = CHANGE_EVOLITION / 2;
 
 struct primitive_bot final:
     public gameObject
@@ -26,9 +27,11 @@ public:
     void evolition();
 private:
     type_brain brain[BRAIN_SIZE];
-
+    
     world& mainWorld;
     type_brain counter = 0;
-    short food = 0;
+
+    game_type food = 0;
+    game_type steps = 0;
 };
 

@@ -58,10 +58,10 @@ bool primitive_bot::update()
 	if (food <= 0) { destroy(); }
 	else { food--; }
 
-	if (position.get_y() < 8) { food += 40; }
-	if (counter == BRAIN_SIZE) { counter = 0; }
+	if (counter == BRAIN_SIZE - 1) { counter = 0; }
 
 	type_brain command = brain[counter];
+	
 	switch (command)
 	{
 	case 1: // move -x
@@ -88,7 +88,7 @@ bool primitive_bot::update()
 		break;
 
 	case 5: // spawn new bot
-		if (food > 500 && !mainWorld.is_full()) {
+		if (food > 500) {
 			bool create = true;
 			counter++;
 
@@ -129,7 +129,9 @@ bool primitive_bot::update()
 			}
 		}
 		break;
-
+	case 7:
+		if (food < 1000 && position.get_y() < 10) { food += 20; }
+		break;
 	case 6: // kill
 		counter++;
 		game_type x = this->position.get_x();
@@ -175,6 +177,10 @@ bool primitive_bot::update()
 	}
 
 	counter++;
+	steps++;
+	if (steps > MAX_AGE_STEPS) {
+		destroy();
+	}
 
 	return alive;
 }

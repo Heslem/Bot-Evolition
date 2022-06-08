@@ -8,7 +8,6 @@
 #include <stdio.h>
 #include "vector2.h"
 #include "gameObject.h"
-#include "game_object_list.h"
 #include "world_config.h"
 
 #define clear_screen() printf("\033[H\033[J")
@@ -57,14 +56,14 @@ static void buffer_draw_gameObject(const gameObject& object) {
 	buffer_set_pixel(object.position.get_x(), object.position.get_y(), object.sprite);
 }
 
-static void buffer_draw_gameObjects(const game_object_list& gameObjects) {
+static void buffer_draw_gameObjects(const std::vector<gameObject*> gameObjects) {
 	for (game_type i = 0; i < gameObjects.size(); ++i) {
-		buffer_set_pixel(gameObjects[i].position, gameObjects[i].sprite);
+		buffer_set_pixel(gameObjects[i]->position, gameObjects[i]->sprite);
 	}
 }
 
 
 static void print_buffer() {
-	printf("%s", &buffer);
+	printf("%s", buffer);
 }
 #endif //GRAPHICS_MODE

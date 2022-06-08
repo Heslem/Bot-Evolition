@@ -1,0 +1,300 @@
+bot: 
+x: 18
+y: 10
+food: 400
+brain: 1233175371636351
+end.
+bot: 
+x: 1
+y: 31
+food: 400
+brain: 1214316215145237
+end.
+bot: 
+x: 25
+y: 2
+food: 400
+brain: 3113274316732363
+end.
+bot: 
+x: 9
+y: 23
+food: 400
+brain: 2654644237264266
+end.
+bot: 
+x: 15
+y: 19
+food: 400
+brain: 6276135775475411
+end.
+bot: 
+x: 46
+y: 10
+food: 400
+brain: 5266221445677464
+end.
+bot: 
+x: 28
+y: 18
+food: 400
+brain: 1271566222532752
+end.
+bot: 
+x: 42
+y: 10
+food: 400
+brain: 5165534364352313
+end.
+bot: 
+x: 43
+y: 20
+food: 400
+brain: 5212666624172154
+end.
+bot: 
+x: 37
+y: 28
+food: 400
+brain: 1452637124637266
+end.
+bot: 
+x: 5
+y: 8
+food: 400
+brain: 5166266661675267
+end.
+bot: 
+x: 4
+y: 31
+food: 400
+brain: 4314777734571727
+end.
+bot: 
+x: 33
+y: 5
+food: 400
+brain: 5511236427133233
+end.
+bot: 
+x: 17
+y: 14
+food: 400
+brain: 4462437175546733
+end.
+bot: 
+x: 46
+y: 7
+food: 400
+brain: 7666124671375735
+end.
+bot: 
+x: 27
+y: 8
+food: 400
+brain: 6367154321416353
+end.
+bot: 
+x: 39
+y: 20
+food: 400
+brain: 7673512575355154
+end.
+bot: 
+x: 13
+y: 14
+food: 400
+brain: 1116277631214647
+end.
+bot: 
+x: 50
+y: 4
+food: 400
+brain: 5527625556272222
+end.
+bot: 
+x: 45
+y: 12
+food: 400
+brain: 3143445274374117
+end.
+bot: 
+x: 12
+y: 32
+food: 400
+brain: 3773141455763452
+end.
+bot: 
+x: 34
+y: 27
+food: 400
+brain: 3316332355553157
+end.
+bot: 
+x: 15
+y: 10
+food: 400
+brain: 5167115522177666
+end.
+bot: 
+x: 12
+y: 6
+food: 400
+brain: 4163154246451647
+end.
+bot: 
+x: 19
+y: 30
+food: 400
+brain: 6612633723541513
+end.
+bot: 
+x: 45
+y: 12
+food: 400
+brain: 1636375442751157
+end.
+bot: 
+x: 8
+y: 23
+food: 400
+brain: 3232314212622561
+end.
+bot: 
+x: 10
+y: 6
+food: 400
+brain: 6355616367543774
+end.
+bot: 
+x: 42
+y: 20
+food: 400
+brain: 5175623567353133
+end.
+bot: 
+x: 29
+y: 10
+food: 400
+brain: 7665642432316521
+end.
+bot: 
+x: 36
+y: 29
+food: 400
+brain: 4124424756671322
+end.
+bot: 
+x: 43
+y: 15
+food: 400
+brain: 6461615344462224
+end.
+bot: 
+x: 7
+y: 1
+food: 400
+brain: 4323651722463372
+end.
+bot: 
+x: 43
+y: 17
+food: 400
+brain: 3167215553723455
+end.
+bot: 
+x: 49
+y: 1
+food: 400
+brain: 2364526666656435
+end.
+bot: 
+x: 6
+y: 23
+food: 400
+brain: 4662141635567771
+end.
+bot: 
+x: 30
+y: 19
+food: 400
+brain: 2267445316672625
+end.
+bot: 
+x: 1
+y: 19
+food: 400
+brain: 4515532271333261
+end.
+bot: 
+x: 2
+y: 31
+food: 400
+brain: 7743321337175152
+end.
+bot: 
+x: 49
+y: 10
+food: 400
+brain: 7566771515544245
+end.
+bot: 
+x: 24
+y: 14
+food: 400
+brain: 2336464436615161
+end.
+bot: 
+x: 5
+y: 21
+food: 400
+brain: 3543733124756514
+end.
+bot: 
+x: 41
+y: 5
+food: 400
+brain: 3444341175725316
+end.
+bot: 
+x: 27
+y: 7
+food: 400
+brain: 5141236575661611
+end.
+bot: 
+x: 9
+y: 12
+food: 400
+brain: 1175262573222125
+end.
+bot: 
+x: 40
+y: 17
+food: 400
+brain: 3667271577115417
+end.
+bot: 
+x: 24
+y: 19
+food: 400
+brain: 7327426254232244
+end.
+bot: 
+x: 39
+y: 2
+food: 400
+brain: 1753357316216576
+end.
+bot: 
+x: 33
+y: 23
+food: 400
+brain: 5734127525234211
+end.
+bot: 
+x: 42
+y: 18
+food: 400
+brain: 2116544754514166
+end.
