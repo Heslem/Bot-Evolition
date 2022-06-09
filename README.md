@@ -1,8 +1,9 @@
 # Bot-Evolition
 
 This is small project for Orange PI, and this not mistake in name. I want to run it on a few days, or weeks. Maybe in future i add neural networks.
+NOW PROJECT CAN'T RUN ON LINUX! Because i try fix segmention fault 😞
 
-My code bad? I don't know. If yes, i will happy is you try to help me.
+My code bad? Yes. I will happy is you try to help me.
 
 # About code
 GRAPHICS_MODE - this is mean, compile code which out game objects in console.
@@ -26,3 +27,4 @@ List of commands:
 4 - move up
 5 - spawn(side)
 6 - kill(side)
+7 - get food from light.
