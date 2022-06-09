@@ -4,9 +4,6 @@ This is small project for Orange PI, and this not mistake in name. I want to run
 
 My code bad? Yes. I will happy is you try to help me.
 
-# About code
-GRAPHICS_MODE - this is mean, compile code which out game objects in console.
-
 # Logic of bot
 Any bots have "brain", array of commands (numbers)
 Command "1" can mean move left. Command "2" move right.
