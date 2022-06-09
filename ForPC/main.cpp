@@ -35,7 +35,7 @@ int main()
 #endif
 
         current_world->update();
-        std::this_thread::sleep_for(timescale);
+        //std::this_thread::sleep_for(timescale);
     }
     delete current_world;
 

@@ -6,7 +6,7 @@
 #include <string>
 #include <ctime>
 
-world::world() : steps(0), next_steps_to_save(save_interval)
+world::world()
 {
     for (game_type i = 0; i < 50; i++)
     {
@@ -28,23 +28,16 @@ void world::update()
 {
     clear_collision();
 
-    // current_size not changing when program run. It changing only if object was deleted, but no created.
-    size_t current_size = gameObjects.size();
-    for (game_type i = 0; i < current_size; ++i)
+    for (game_type i = 0; i < gameObjects.size(); ++i)
     {
-        gameObject& object = *gameObjects[i];
-
         if (this->gameObjects[i]->update()) {
-            collisions[get_index(object.position.get_x(), object.position.get_y())] = true;
+            collisions[get_index(gameObjects[i]->position.get_x(), gameObjects[i]->position.get_y())] = true;
         }
         else {
             delete this->gameObjects.at(i);
             this->gameObjects.erase(this->gameObjects.begin() + i);
-            
-            current_size--;
         }
     }
-
 
     if (steps > next_steps_to_save) {
         save_world();
@@ -65,7 +58,7 @@ void world::save_world()
 {
     save current_save;
 
-    std::string name = ("name_" + std::to_string(count_saves) + ".txt");
+    std::string name = ("save_" + std::to_string(count_saves) + ".botworld");
     
     current_save.saveObjects(gameObjects, name.c_str());
 
@@ -111,11 +104,10 @@ const game_type world::get_index(const game_type& x, const game_type& y) const
 
 void world::clear_collision()
 {
-    for (game_type i = 0; i < world_size; ++i)
+    memset(collisions, false, world_size); // set all elements of array false
+
+    for (game_type i = 0; i < gameObjects.size(); i++)
     {
-        collisions[i] = false;
-        if (i < gameObjects.size()) {
-            collisions[get_index(gameObjects[i]->position.get_x(), gameObjects[i]->position.get_y())] = true;
-        }
+        collisions[get_index(gameObjects[i]->position.get_x(), gameObjects[i]->position.get_y())] = true;
     }
 }

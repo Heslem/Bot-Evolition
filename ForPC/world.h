@@ -4,7 +4,7 @@
 #include "gameObject.h"
 #include "world_config.h"
 
-constexpr unsigned long long save_interval = 500;
+constexpr unsigned long long save_interval = 2500;
 
 struct world final
 {
@@ -22,21 +22,20 @@ struct world final
 
 	gameObject* get_game_object(const game_type& x, const game_type& y) const;
 
-	const game_type get_index(const game_type& x, const game_type& y) const;
-
 #if GRAPHICS_MODE
 	std::vector<gameObject*> gameObjects;
 #endif
 
 private:
 	unsigned long long count_saves = 0;
-	unsigned long long next_steps_to_save;
-	unsigned long long steps;
+	unsigned long long next_steps_to_save = save_interval;
+	unsigned long long steps = 0;
 
+	const game_type get_index(const game_type& x, const game_type& y) const;
 	void clear_collision();
 
 #if GRAPHICS_MODE == false
-	game_object_list gameObjects;
+	std::vector<gameObject*> gameObjects;
 #endif
 	bool collisions[world_size];
 };

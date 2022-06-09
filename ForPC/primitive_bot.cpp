@@ -189,7 +189,7 @@ std::string primitive_bot::get_save() const
 {
 	std::string brainData("");
 	for (unsigned char i = 0; i < BRAIN_SIZE; i++) {
-		brainData.append(std::to_string(brain[i]));
+		brainData.append("{" + std::to_string(brain[i]) + "}");
 	}
 
 	return std::string("bot: ") + "\n" +
