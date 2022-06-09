@@ -2,23 +2,15 @@
 #include <iostream>
 #include <fstream>
 
-save::save()
-{
-}
-
-save::~save()
-{
-}
-
-void save::saveObjects(const std::vector<gameObject*> objects, const char* saveName)
+void save::save_objects(std::vector<game_object*> game_objects, const char* filename)
 {
 	std::ofstream outfile;
-	outfile.open(saveName, std::ofstream::out | std::ofstream::trunc);
+	outfile.open(filename, std::ofstream::out | std::ofstream::trunc);
 
-	for (game_type i = 0; i < objects.size(); ++i)
+	for (size_t i = 0; i < game_objects.size(); ++i)
 	{
-		outfile << objects[i]->get_save().c_str() << std::endl << "end." << std::endl;
+		outfile << game_objects[i]->get_save().c_str() << std::endl << "end." << std::endl;
 	}
-	 
+
 	outfile.close();
 }

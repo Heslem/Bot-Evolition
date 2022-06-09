@@ -1,43 +1,50 @@
-﻿#include <chrono>
+﻿#include <signal.h>
+#include <chrono>
 #include <thread>
 
+#include "world.h"
 #include "graphics_mode.h"
+
 #if GRAPHICS_MODE
 #include "graphics_worker.h"
 #endif
-#include "world.h"
-#include <signal.h>
 
-bool flag = true;
-void closing_app(int sig) {
+static bool flag = true;
+void stop_world(int sig) {
     flag = false;
 }
 
-int main()
+int main(int argc, char* argv[])
 {
-    signal(SIGINT, closing_app); // when user press CTRL + C, stopping the sumilation.
+    signal(SIGINT, stop_world);
+
     const std::chrono::milliseconds timescale(1);
 
+    world* currentWorld = new world();
+    
 #if GRAPHICS_MODE
-    buffer_init();
+    graphics_worker* graphics = new graphics_worker();
 #endif
 
-    world* current_world = new world();
     while (flag) {
 
 #if GRAPHICS_MODE
         clear_screen();
-        buffer_clear();
-        buffer_draw_gameObjects(current_world->gameObjects);
+        graphics->clear_buffer();
+        
+        for (size_t i = 0; i < currentWorld->game_objects.size(); ++i)
+        {
+            graphics->set_pixel(currentWorld->game_objects[i]->position.get_x(), currentWorld->game_objects[i]->position.get_y(), currentWorld->game_objects[i]->sprite_);
+        }
 
-
-        print_buffer();
+        graphics->print_buffer();
 #endif
 
-        current_world->update();
-        //std::this_thread::sleep_for(timescale);
+        currentWorld->update();
+        std::this_thread::sleep_for(timescale);
     }
-    delete current_world;
+
+    delete currentWorld;
 
     return 0;
 }

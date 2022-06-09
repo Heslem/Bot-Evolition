@@ -1,113 +1,99 @@
 #include "world.h"
-#include "primitive_bot.h"
+#include "bot.h"
 #include "save.h"
-#include <iostream>
-#include <Windows.h>
 #include <string>
-#include <ctime>
+
+#define get_index(x, y) (y * world_size_x + x)
 
 world::world()
 {
-    for (game_type i = 0; i < 50; i++)
-    {
-        primitive_bot* object = new primitive_bot(*this);
-        object->randomize_position();
-
-        this->create(object);
-    }
-
-    save_world();
+	for (std::size_t i = 0; i < 100; i++)
+	{
+		bot* b = new bot(*this);
+		b->position = vector2::random();
+		create(*b);
+	}
 }
 
 world::~world()
 {
-    save_world();
 }
 
 void world::update()
 {
-    clear_collision();
+	clear_collision();
+	for (std::size_t i = 0; i < this->game_objects.size(); ++i)
+	{
+		this->game_objects[i]->update();
 
-    for (game_type i = 0; i < gameObjects.size(); ++i)
-    {
-        if (this->gameObjects[i]->update()) {
-            collisions[get_index(gameObjects[i]->position.get_x(), gameObjects[i]->position.get_y())] = true;
-        }
-        else {
-            delete this->gameObjects.at(i);
-            this->gameObjects.erase(this->gameObjects.begin() + i);
-        }
-    }
+		if (!this->game_objects[i]->isAlive()) {
+			delete this->game_objects[i];
+			this->game_objects.erase(this->game_objects.begin() + i);
+		}
+	}
+	if (this->steps > this->next_steps_to_save) {
+		save_world();
 
-    if (steps > next_steps_to_save) {
-        save_world();
-        next_steps_to_save += save_interval;
-    }
-    else steps++;
-   /* std::string str("title " + std::to_string(current_size));
-    system(str.c_str());*/
-}
-
-void world::create(gameObject* object)
-{
-    collisions[get_index(object->position.get_x(), object->position.get_y())] = true;
-    this->gameObjects.push_back(object);
-}
-
-void world::save_world()
-{
-    save current_save;
-
-    std::string name = ("save_" + std::to_string(count_saves) + ".botworld");
-    
-    current_save.saveObjects(gameObjects, name.c_str());
-
-    count_saves++;
+		this->count_saves++;
+		this->next_steps_to_save += save_interval;
+	}
+	else this->steps++;
 }
 
 const bool world::is_busy_cell(const game_type& x, const game_type& y) const
 {
-    if (x < 1 || x > world_size_x - 2 ||
-        y < 1 || y > world_size_y) return true;
+	if (x < 1 || x > world_size_x - 2 ||
+		y < 1 || y > world_size_y) return true;
 
-    return collisions[get_index(x, y)];
+	return collisions[get_index(x, y)];
 }
 
 const bool world::is_free_cell(const game_type& x, const game_type& y) const
 {
-    return !is_busy_cell(x, y);
+	return !is_busy_cell(x, y);
 }
 
-const bool world::is_busy_cell(const vector2<game_type>& position) const
+const bool world::is_busy_cell(const vector2& position) const
 {
-    return is_busy_cell(position.get_x(), position.get_y());
+	return is_busy_cell(position.get_x(), position.get_y());
 }
 
-const bool world::is_free_cell(const vector2<game_type>& position) const
+const bool world::is_free_cell(const vector2& position) const
 {
-    return !is_busy_cell(position.get_x(), position.get_y());
+	return !is_busy_cell(position.get_x(), position.get_y());
 }
 
-// Very slow thing
-gameObject* world::get_game_object(const game_type& x, const game_type& y) const
+const game_type world::get_index_game_object(const game_type& x, const game_type& y) const
 {
-    for (game_type i = 0; i < gameObjects.size(); ++i) {
-        if (gameObjects[i]->position.get_x() == x && gameObjects[i]->position.get_y() == y) return gameObjects[i];
-    }
-    return nullptr;
+	for (size_t i = 0; i < game_objects.size(); ++i) {
+		if (game_objects[i]->position.get_x() == x && game_objects[i]->position.get_y() == y) return i;
+	}
+	return -1;
 }
 
-const game_type world::get_index(const game_type& x, const game_type& y) const
+void world::save_world() const
 {
-    return y * world_size_x + x;
+	save current_save;
+
+	std::string name = ("save_" + std::to_string(count_saves) + ".botworld");
+
+	current_save.save_objects(game_objects, name.c_str());
+}
+
+void world::create(game_object& object)
+{
+	this->collisions[get_index(object.position.get_x(), object.position.get_y())] = true;
+	this->game_objects.push_back(&object);
 }
 
 void world::clear_collision()
 {
-    memset(collisions, false, world_size); // set all elements of array false
-
-    for (game_type i = 0; i < gameObjects.size(); i++)
-    {
-        collisions[get_index(gameObjects[i]->position.get_x(), gameObjects[i]->position.get_y())] = true;
-    }
+	for (game_type i = 0; i < world_size; ++i)
+	{
+		this->collisions[i] = false;
+	}
+	for (size_t i = 0; i < game_objects.size(); ++i)
+	{
+		this->collisions[get_index(game_objects[i]->position.get_x(), game_objects[i]->position.get_y())] = true;
+	}
 }

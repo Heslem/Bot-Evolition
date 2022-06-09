@@ -1,96 +1,54 @@
 #pragma once
-#include <random>
+#include "random"
 #include "world_config.h"
 
-template<typename T>
+extern "C" {
+	typedef int game_type;
+}
+
 struct vector2
 {
 private:
-	T x;
-	T y;
+	game_type x_;
+	game_type y_;
+
 public:
 	vector2();
-	vector2(const T& x, const T& y);
-	vector2(const vector2& vector);
-	
-	const T& get_x() const { return x; }
-	const T& get_y() const { return y; }
+	vector2(const game_type& x, const game_type& y);
 
-	bool set_x(const T& x);
-	bool set_y(const T& y);
-
-	void set_position(const T& x, const T& y);
-
-	static const vector2 random(int maxX, int maxY) {
-		return vector2(1 + rand() % maxX, 1 + rand() % maxY);
+	const game_type& get_x() const noexcept {
+		return x_;
+	}
+	const game_type& get_y() const noexcept {
+		return y_;
 	}
 
-	friend const vector2 operator+(const vector2& left, const vector2& right) {
-		return vector2(left.x + right.x, left.y + right.y);
+	void set_x(game_type x){
+		if (x > world_size_x - 1) {
+			x_ = world_size_x - 1;
+		}
+		else if (x < 1) {
+			x_ = 1;
+		}
+		else {
+			x_ = x;
+		}
 	}
 
-	friend const vector2 operator-(const vector2& left, const vector2& right) {
-		return vector2(left.x - right.x, left.y - right.y);
+	void set_y(game_type y) {
+		if (y > world_size_y - 1) {
+			y_ = world_size_y - 1;
+		}
+		else if (y < 1) {
+			y_ = 1;
+		}
+		else {
+			y_ = y;
+		}
 	}
 
-	friend const vector2 operator*(const vector2& left, const T& right) {
-		return vector2(left.x * right, left.y * right);
+	static const vector2 random() {
+		return vector2(1 + rand() % world_size_x, 1 + rand() % world_size_y);
 	}
 };
 
-template<typename T>
-inline vector2<T>::vector2() : x(1), y(1)
-{
-	
-}
-
-template<typename T>
-inline vector2<T>::vector2(const T& x, const T& y)
-{
-	set_position(x, y);
-}
-
-template<typename T>
-inline vector2<T>::vector2(const vector2& vector)
-{
-	set_position(vector.x, vector.y);
-}
-
-template<typename T>
-inline void vector2<T>::set_position(const T& x, const T& y)
-{
-	set_x(x);
-	set_y(y);
-}
-
-template<typename T>
-inline bool vector2<T>::set_x(const T& x)
-{
-	if (x > world_size_x) {
-		this->x = world_size_x;
-	}
-	else if (x < 1) {
-		this->x = 1; 
-	}
-	else {
-		this->x = x; 
-		return false;
-	}
-	return true;
-}
-
-template<typename T>
-inline bool vector2<T>::set_y(const T& y)
-{
-	if (y > world_size_y) {
-		this->y = world_size_y; 
-	}
-	else if (y < 1) {
-		this->y = 1; 
-	}
-	else {
-		this->y = y;
-		return false;
-	}
-	return true;
-}

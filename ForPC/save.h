@@ -1,10 +1,10 @@
 #pragma once
-#include "gameObject.h"
+#include <vector>
+#include "game_object.h"
 
 struct save final
 {
-	save();
-	~save();
-	void saveObjects(const std::vector<gameObject*> objects, const char* saveName);
+public:
+	void save_objects(std::vector<game_object*> game_objects, const char* filename);
 };
 

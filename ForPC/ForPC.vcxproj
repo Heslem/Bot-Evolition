@@ -142,21 +142,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="bot.h" />
     <ClInclude Include="buffer_config.h" />
-    <ClInclude Include="gameObject.h" />
+    <ClInclude Include="game_object.h" />
     <ClInclude Include="graphics_mode.h" />
     <ClInclude Include="graphics_worker.h" />
-    <ClInclude Include="primitive_bot.h" />
     <ClInclude Include="save.h" />
     <ClInclude Include="vector2.h" />
     <ClInclude Include="world.h" />
     <ClInclude Include="world_config.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="gameObject.cpp" />
+    <ClCompile Include="bot.cpp" />
+    <ClCompile Include="game_object.cpp" />
+    <ClCompile Include="graphics_worker.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="primitive_bot.cpp" />
     <ClCompile Include="save.cpp" />
+    <ClCompile Include="vector2.cpp" />
     <ClCompile Include="world.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
