@@ -4,7 +4,7 @@
 #include "vector2.h"
 #include "graphics_mode.h"
 
-constexpr unsigned long long save_interval = 50000;
+constexpr unsigned long long save_interval = 30000;
 
 struct world final
 {

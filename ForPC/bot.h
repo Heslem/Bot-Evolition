@@ -1,10 +1,10 @@
 #pragma once
 #include "world.h"
 
-typedef unsigned char type_brain;
+typedef short brain_type;
 
-constexpr type_brain BRAIN_SIZE = 16;
-constexpr type_brain MAX_COMMAND = 7;
+constexpr brain_type BRAIN_SIZE = 16;
+constexpr brain_type MAX_COMMAND = 8; // count of real command
 
 constexpr game_type MAX_AGE_STEPS = 2000;
 constexpr game_type CHANGE_EVOLITION = 10;
@@ -28,9 +28,9 @@ public:
 private:
 	world& current_world;
 
-	type_brain brain[BRAIN_SIZE];
+	brain_type brain[BRAIN_SIZE];
 
-	type_brain counter = 0;
+	brain_type counter = 0;
 	game_type steps = 0;
 	game_type food;
 };

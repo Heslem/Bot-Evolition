@@ -6,6 +6,13 @@
 bot::bot(world& my_world) : game_object('B'), current_world(my_world), food(FOOD_WHEN_START)
 {
 	randomize_brain();
+
+	// start data of brain, it's need because bot's quick die without it
+	brain[0] = 7;
+	brain[1] = 5;
+	brain[2] = 1;
+	brain[3] = 7;
+	brain[4] = 7;
 }
 #else
 bot::bot(world& my_world) : current_world(my_world), food(FOOD_WHEN_START)
@@ -20,7 +27,7 @@ bot::~bot()
 #if GRAPHICS_MODE
 bot::bot(const bot& copy_bot) : game_object('B'), current_world(copy_bot.current_world), food(FOOD_WHEN_START)
 {
-	for (type_brain i = 0; i < BRAIN_SIZE; ++i) {
+	for (brain_type i = 0; i < BRAIN_SIZE; ++i) {
 		this->brain[i] = copy_bot.brain[i];
 	}
 	evolition();
@@ -37,7 +44,7 @@ bot::bot(const bot& copy_bot) : current_world(copy_bot.current_world), food(FOOD
 
 bot& bot::operator=(const bot& right_bot)
 {
-	for (type_brain i = 0; i < BRAIN_SIZE; ++i) {
+	for (brain_type i = 0; i < BRAIN_SIZE; ++i) {
 		this->brain[i] = right_bot.brain[i];
 	}
 	this->food = right_bot.food;
@@ -55,7 +62,7 @@ void bot::update()
 
 	if (counter == BRAIN_SIZE - 1) { counter = 0; }
 
-	type_brain command = brain[counter];
+	brain_type command = brain[counter];
 	switch (command)
 	{
 	case 1: // move -x
@@ -124,8 +131,11 @@ void bot::update()
 			}
 		}
 		break;
-	case 7:
+	case 7: // get food
 		if (food < 1000 && position.get_y() < 10) { food += 20; }
+		break;
+	case 8: // goto
+		counter = brain[++counter] - 1;
 		break;
 	case 6: // kill
 		counter++;
@@ -194,14 +204,14 @@ const std::string bot::get_save() const
 static std::random_device device;
 static std::mt19937 rng(device());
 
-static std::uniform_int_distribution<std::mt19937::result_type> c_evo(1, MAX_COMMAND);
+static std::uniform_int_distribution<std::mt19937::result_type> c_evo(1, BRAIN_SIZE);
 static std::uniform_int_distribution<std::mt19937::result_type> change_evo(0, CHANGE_EVOLITION);
 static std::uniform_int_distribution<std::mt19937::result_type> b_evo(0, BRAIN_SIZE - 1);
 
 
 void bot::randomize_brain()
 {
-	for (type_brain i = 0; i < BRAIN_SIZE; ++i) {
+	for (brain_type i = 0; i < BRAIN_SIZE; ++i) {
 		brain[i] = c_evo(rng);
 	}
 }

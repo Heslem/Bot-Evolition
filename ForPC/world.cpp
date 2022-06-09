@@ -13,6 +13,7 @@ world::world()
 		b->position = vector2::random();
 		create(*b);
 	}
+	save_world();
 }
 
 world::~world()

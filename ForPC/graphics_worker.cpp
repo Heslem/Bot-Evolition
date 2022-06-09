@@ -18,9 +18,8 @@ graphics_worker::~graphics_worker()
 void graphics_worker::clear_buffer()
 {
 	unsigned short counter = 0;
-	unsigned short i = 0;
 
-	for (; i < world_size; ++i)
+	for (unsigned short i = 0; i < world_size; ++i)
 	{
 		if (counter == world_size_x - 1) {
 			counter = 0; // i do that, because buffer must have \n, else buffer will clear \n and draw gameObjects wrong.
