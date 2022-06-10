@@ -60,8 +60,6 @@ void bot::update()
 	if (food <= 0) destroy();
 	else food--;
 
-	if (counter == BRAIN_SIZE - 1) { counter = 0; }
-
 	brain_type command = brain[counter];
 	switch (command)
 	{
@@ -91,7 +89,7 @@ void bot::update()
 	case 5: // spawn new bot
 		if (food > 500) {
 			bool create = true;
-			counter++;
+			increase_counter();
 
 			int x = this->position.get_x();
 			int y = this->position.get_y();
@@ -135,10 +133,11 @@ void bot::update()
 		if (food < 1000 && position.get_y() < 10) { food += 20; }
 		break;
 	case 8: // goto
-		counter = brain[++counter] - 1;
+		increase_counter();
+		counter = brain[counter] - 1;
 		break;
 	case 6: // kill
-		counter++;
+		increase_counter();
 		game_type x = this->position.get_x();
 		game_type y = this->position.get_y();
 		//getting side
@@ -180,7 +179,8 @@ void bot::update()
 		break;
 	}
 
-	counter++;
+	increase_counter();
+
 	steps++;
 	if (steps > MAX_AGE_STEPS) {
 		destroy();
@@ -221,4 +221,12 @@ void bot::evolition()
 	if (change_evo(rng) == D_CHANGE_EVOLITION) {
 		brain[b_evo(rng)] = c_evo(rng);
 	}
+}
+
+void bot::increase_counter()
+{
+	if (counter > BRAIN_SIZE - 1) 
+		counter = 0; 
+	else 
+		counter++;
 }

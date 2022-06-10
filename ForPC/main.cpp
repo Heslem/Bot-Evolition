@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
 #endif
 
         currentWorld->update();
-        std::this_thread::sleep_for(timescale);
+        // std::this_thread::sleep_for(timescale);
     }
 
     delete currentWorld;

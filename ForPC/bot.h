@@ -25,6 +25,8 @@ public:
 
 	void randomize_brain();
 	void evolition();
+
+	void increase_counter();
 private:
 	world& current_world;
 
