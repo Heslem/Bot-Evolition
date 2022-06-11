@@ -143,6 +143,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="bot.h" />
+    <ClInclude Include="bot_config.h" />
     <ClInclude Include="buffer_config.h" />
     <ClInclude Include="game_object.h" />
     <ClInclude Include="graphics_mode.h" />

@@ -7,6 +7,7 @@ struct game_object
 public:
 	virtual void update() = 0;
 	virtual const std::string get_save() const = 0;
+	virtual const game_type get_id() const = 0;
 public:
 
 #if GRAPHICS_MODE

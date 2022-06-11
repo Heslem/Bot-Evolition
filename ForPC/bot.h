@@ -1,15 +1,6 @@
 #pragma once
 #include "world.h"
-
-typedef short brain_type;
-
-constexpr brain_type BRAIN_SIZE = 16;
-constexpr brain_type MAX_COMMAND = 8; // count of real command
-
-constexpr game_type MAX_AGE_STEPS = 2000;
-constexpr game_type CHANGE_EVOLITION = 10;
-constexpr game_type FOOD_WHEN_START = 400;
-constexpr game_type D_CHANGE_EVOLITION = CHANGE_EVOLITION / 2;
+#include "bot_config.h"
 
 class bot final :
 	public game_object
@@ -22,12 +13,16 @@ public:
 
 	void update() override;
 	const std::string get_save() const override;
+	const game_type get_id() const override;
 
 	void randomize_brain();
 	void evolition();
 
 	void increase_counter();
 private:
+	void generate_id();
+	const bool getConditionResult(const game_type& conditionType) const;
+
 	world& current_world;
 
 	brain_type brain[BRAIN_SIZE];
@@ -35,5 +30,6 @@ private:
 	brain_type counter = 0;
 	game_type steps = 0;
 	game_type food;
+	game_type id = 0;
 };
 
