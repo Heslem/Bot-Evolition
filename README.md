@@ -18,3 +18,18 @@ List of commands:
 6 - kill(side)
 7 - get food from light.
 8 - goto(pointer)
+
+9 - if(condition, end pointer)
+
+the end pointer means where the counter is set if the condition is false.
+
+condition list:
+1 - left bot
+2 - right bot
+3 - down bot
+4 - up bot
+
+5 - left  my bot ("my" means like himself)
+6 - right my bot
+7 - down my bot
+8 - up my bot
