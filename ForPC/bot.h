@@ -19,6 +19,8 @@ public:
 	void evolition();
 
 	void increase_counter();
+
+	static const bool compare_brain_bots(const game_type& a, const game_type& b);
 private:
 	void generate_id();
 	const bool getConditionResult(const game_type& conditionType) const;

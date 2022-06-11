@@ -257,7 +257,7 @@ void bot::randomize_brain()
 
 void bot::evolition()
 {
-	if (change_evo(rng) == D_CHANGE_EVOLITION) {
+	if (change_evo(rng) == CHANGE_EVOLITION / 2) {
 		brain[b_evo(rng)] = c_evo(rng);
 		generate_id();
 	}
@@ -269,6 +269,13 @@ void bot::increase_counter()
 		counter = 0; 
 	else 
 		counter++;
+}
+
+const bool bot::compare_brain_bots(const game_type& a, const game_type& b)
+{
+	game_type different = a - b;
+	
+	return different < MAX_DIFF_BRAIN;
 }
 
 void bot::generate_id()
@@ -284,6 +291,7 @@ const bool bot::getConditionResult(const game_type& conditionType) const
 {
 	bool result = false;
 
+	// near bot
 	if (conditionType == 1) {
 		int x = this->position.get_x() - 1;
 		int y = this->position.get_y();
@@ -314,6 +322,40 @@ const bool bot::getConditionResult(const game_type& conditionType) const
 
 		if (current_world.is_busy_cell(x, y)) {
 			result = current_world.get_index_game_object(x, y) != -1;
+		}
+	}
+
+	// is my bot 
+	else if (conditionType == 5) {
+		int x = this->position.get_x() - 1;
+		int y = this->position.get_y();
+
+		if (current_world.is_busy_cell(x, y)) {
+			result = compare_brain_bots(current_world.game_objects[current_world.get_index_game_object(x, y)]->get_id(), get_id());
+		}
+	}
+	else if (conditionType == 6) {
+		int x = this->position.get_x() + 1;
+		int y = this->position.get_y();
+
+		if (current_world.is_busy_cell(x, y)) {
+			result = compare_brain_bots(current_world.game_objects[current_world.get_index_game_object(x, y)]->get_id(), get_id());
+		}
+	}
+	else if (conditionType == 7) {
+		int x = this->position.get_x();
+		int y = this->position.get_y() + 1;
+
+		if (current_world.is_busy_cell(x, y)) {
+			result = compare_brain_bots(current_world.game_objects[current_world.get_index_game_object(x, y)]->get_id(), get_id());
+		}
+	}
+	else if (conditionType == 8) {
+		int x = this->position.get_x();
+		int y = this->position.get_y() - 1;
+
+		if (current_world.is_busy_cell(x, y)) {
+			result = compare_brain_bots(current_world.game_objects[current_world.get_index_game_object(x, y)]->get_id(), get_id());
 		}
 	}
 
