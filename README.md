@@ -28,3 +28,8 @@ condition list:
 2 - right bot
 3 - down bot
 4 - up bot
+
+5 - left  my bot ("my" means like himself)
+6 - right my bot
+7 - down my bot
+8 - up my bot
