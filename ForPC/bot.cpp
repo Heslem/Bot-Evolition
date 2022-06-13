@@ -175,9 +175,15 @@ void bot::update()
 			if (killBot &&
 				current_world.is_busy_cell(x, y))
 			{
-				game_type index = current_world.get_index_game_object(x, y);
+				size_t index = current_world.get_index_game_object(x, y);
 				if (index != -1) {
-					current_world.game_objects[index]->destroy();
+					if (CAN_ATTACK_SIMILAR_BOTS) {
+						current_world.game_objects[index]->destroy();
+					}
+					else if (!compare_brain_bots(current_world.game_objects[index]->get_id(), this->id))
+					{
+						current_world.game_objects[index]->destroy();
+					}
 					food += FOOD_FOR_KILL;
 				}
 			}

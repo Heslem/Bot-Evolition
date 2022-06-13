@@ -22,16 +22,19 @@ int main(int argc, char* argv[])
 
     world* currentWorld = new world();
     
-#if GRAPHICS_MODE
-    graphics_worker* graphics = new graphics_worker();
-#endif
 
+#if GRAPHICS_MODE
+        graphics_worker* graphics = new graphics_worker();
+#endif    
+
+    flag = true;
     while (flag) {
 
 #if GRAPHICS_MODE
+
         clear_screen();
         graphics->clear_buffer();
-        
+
         for (size_t i = 0; i < currentWorld->game_objects.size(); ++i)
         {
             graphics->set_pixel(currentWorld->game_objects[i]->position.get_x(), currentWorld->game_objects[i]->position.get_y(), currentWorld->game_objects[i]->sprite_);
@@ -40,9 +43,14 @@ int main(int argc, char* argv[])
         graphics->print_buffer();
 #endif
 
-        currentWorld->update();
-        // std::this_thread::sleep_for(timescale);
+         currentWorld->update();
+         // std::this_thread::sleep_for(timescale);
     }
+
+#if GRAPHICS_MODE
+    delete graphics;
+#endif
+
 
     delete currentWorld;
 

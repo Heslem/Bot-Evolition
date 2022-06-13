@@ -1,4 +1,7 @@
 #include "graphics_worker.h"
+
+#if GRAPHICS_MODE
+
 #include <cstdio>
 
 #define get_index(x, y) (y * world_size_x + x)
@@ -47,3 +50,4 @@ void graphics_worker::print_buffer()
 {
 	printf("%s", buffer);
 }
+#endif

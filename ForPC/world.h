@@ -19,7 +19,7 @@ public:
 
 	const bool is_busy_cell(const vector2& position) const;
 	const bool is_free_cell(const vector2& position) const;
-	const game_type get_index_game_object(const game_type& x, const game_type& y) const;
+	const size_t get_index_game_object(const game_type& x, const game_type& y) const;
 
 	void save_world() const;
 

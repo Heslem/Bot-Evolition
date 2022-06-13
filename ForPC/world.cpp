@@ -64,7 +64,7 @@ const bool world::is_free_cell(const vector2& position) const
 	return !is_busy_cell(position.get_x(), position.get_y());
 }
 
-const game_type world::get_index_game_object(const game_type& x, const game_type& y) const
+const size_t world::get_index_game_object(const game_type& x, const game_type& y) const
 {
 	for (size_t i = 0; i < game_objects.size(); ++i) {
 		if (game_objects[i]->position.get_x() == x && game_objects[i]->position.get_y() == y) return i;

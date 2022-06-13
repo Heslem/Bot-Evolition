@@ -1,4 +1,7 @@
 #pragma once
+#include "graphics_mode.h"
+#if GRAPHICS_MODE
+
 #include "game_object.h"
 #include "world_config.h"
 #include "vector2.h"
@@ -16,6 +19,8 @@ public:
 	void set_pixel(const game_type& x, const game_type& y, const char& sprite);
 	void print_buffer();
 private:
+
 	char buffer[world_size];
 };
 
+#endif
